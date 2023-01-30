@@ -293,6 +293,150 @@ header .categorias a.activo {
 
 
 
+/* ------------------------- */
+/* Grid IMAGENES utilizamos una libreria o framework llamada MUURI*/
+/* ------------------------- */
+
+
+.grid {
+	
+    position: relative;
+    width: 100%;
+    /* ESTAS 2 PROPIEDADES DE ABAJO SE COMBINAN CON JS, para que al actualizar la pagina aparescan todas juntas con transicion de opacidad */
+    opacity: 0;
+    transition: opacity 0.5s linear 1s;
+	
+}
+
+/* CREAMOS ESTO PARA JS PARA QUE FUNCIONE */
+.grid.imagenes-cargadas {
+    opacity: 1; /*PARA QUE APARESCAN LAS IMAGENES */
+}
+
+
+/* seleccionamos el contenedor item que contiene todas las imagenes */
+.grid .item {
+	position: absolute;
+	display: block;
+	padding: 0;
+	margin: 10px;
+	/* utilizo calc, que es calcular el 33% de ancho menos 20px  para que entren 3 imagenes enfilados*/
+	width: calc(33.333333% - 20px); 
+	
+}
+/* esto lo pide MUURI el contenido mas cerca de las imagenes sea relative */
+.grid .item-contenido {
+	position: relative;
+	margin: -5px;
+}
+
+
+/* seleccionamos las imagenes especificamente */
+.grid .item img {
+	
+	width: 100%;
+	cursor: pointer;
+	/* sacar el margen por defecto que tiene las imagenes */
+	vertical-align: top; 
+	border-radius: 10px;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+	background-color: #080707;
+	z-index: -1;
+    filter: grayscale(1);
+}
+
+.grid .item img:hover {
+    filter: grayscale(0);
+	/* scale: 1.01; */
+	transition: 0.9s;
+	/* background-image: (90deg, rgba(81,38,167,0.8), rgba(90,60,149,0.7)),
+	url(/page/imgPage/portfolio1.jpg); */
+} 
+
+
+
+
+/* videos */
+/* seleccionamos las imagenes especificamente */
+.grid .item video {
+	
+	width: 100%;
+	cursor: pointer;
+	/* sacar el margen por defecto que tiene las imagenes */
+	vertical-align: top; 
+	border-radius: 10px;
+    border-bottom-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+	background-color: #080707;
+	z-index: -1;
+    filter: grayscale(1);
+}
+
+.grid .item video:hover {
+    filter: grayscale(0);
+	/* scale: 1.01; */
+	transition: 0.9s;
+	/* background-image: (90deg, rgba(81,38,167,0.8), rgba(90,60,149,0.7)),
+	url(/page/imgPage/portfolio1.jpg); */
+} 
+
+
+
+/* ------------------------- */
+/* ROTULO DEL VIDEOREPOSITORIO Y DEMO */
+/* ------------------------- */
+
+/* el contenedor de todo */
+.demoRepo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: gray;
+    border-radius: 5px;
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+    width: 100%;
+    background: var(--other-color);
+}
+/* el contenedor del icono y su texto repo o demo */
+.content-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    background: var(--other-color);
+    border: none;
+}
+
+/* los dos iconos */
+.icono{
+    color: var(--main-color);
+    font-size: 2em;
+}
+/* el titulo del proyecto */
+.text-a{
+    font-size: 1.2em;
+	text-align: center;
+    
+}
+/* el texto de repo o demo */
+.text-b{
+    font-size: 1.2em;
+    border-radius: 50px;
+    color: var(--main-color);
+	text-align: center;
+}
+
+
+
+
+/* ------------------------------------------------- */
+/* 4 - FIN PORTAFOLIO*/
+/* ------------------------------------------------- */
+
+
 
 
 /* ------------------------------------------------ */
@@ -426,3 +570,172 @@ form textarea{
 /* ------------------------------------------------ */
 /* FIN 5 - CONTACT Y FOOTER*/
 /* ------------------------------------------------ */
+
+
+
+
+
+/* ------------------------------------------------ */
+/* RESPONSIVE */
+/* ------------------------------------------------ */
+
+
+
+
+@media (max-width: 1325px){
+	#header{
+		padding: 16px 3%;
+	}
+	#header.sticky{
+		padding: 8px 3%;
+	}
+	#section{
+		padding: 130px 3% 60px;
+	}
+
+	.services-content{
+		display: flex;
+		flex-direction: column;
+	}
+	.btn-content{
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.about-text{
+		text-align: center;
+		background: #040518;
+	
+	}
+
+	.about-img {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		background: #040518;
+		overflow: hidden;
+	}
+	/* video youtube */
+	.description{
+		display: none;
+	}
+
+	
+}
+
+@media (max-width: 970px){
+	:root{
+		--h1-font: 4.2rem;
+	  --h2-font: 2.9rem;
+	  --p-font: 1rem;
+	}
+	section{
+		padding: 70px 3% 60px;
+	}
+	.home{
+		height: 85vh;
+	}
+	.about{
+		grid-template-columns: 1fr;
+	}
+	.about-img{
+		text-align: center;
+		background: none;
+		display: flex;
+		justify-content: center;
+	}
+	.contact{
+		grid-template-columns: 1fr;
+	}
+
+	.btn-content{
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.about-text{
+		text-align: center;
+	}
+
+	/* video youtube */
+	.description{
+		display: none;
+	}
+	
+	.demoRepo {
+		
+	}
+	.icono{
+		font-size: 1.2em;
+	}
+	.text-a{
+		font-size: 1em;
+		text-align: center;
+	}
+	.text-b{
+		font-size: 1em;
+		text-align: center;
+	}
+}
+
+@media (max-width: 830px){
+	#menu-icon{
+		display: block;
+	}
+	.navbar{
+		position: absolute;
+		top: -600px;
+		right: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		background: #12141c;
+		text-align: left;
+		transition: all .40s ease;
+	}
+	.navbar a{
+		display: block;
+		padding: 1rem;
+		margin: 1rem;
+	}
+	.navbar.active{
+		top: 100%;
+	}
+	:root{
+		--h1-font: 3.7rem;
+	  --h2-font: 2.7rem;
+	}
+
+	.btn-content{
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.about-text{
+		text-align: center;
+	}
+
+	/* video youtube */
+	.description{
+		display: none;
+	}
+
+
+	.icono{
+		font-size: 1em;
+	}
+	.text-a{
+		font-size: 0.5em;
+		text-align: center;
+	}
+	.text-b{
+		font-size: 0.5em;
+		text-align: center;
+	}
+}
