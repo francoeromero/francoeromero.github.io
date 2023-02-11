@@ -218,6 +218,7 @@ span{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	scale: 0.8;
 }
 .logos-skills
 {
@@ -236,6 +237,13 @@ span{
 	margin-right: 50px;
 	margin-left: 50px;
 	text-align: center;
+}
+.skill img {
+	filter: saturate(0.1);
+}
+.skill img:hover {
+	filter: saturate(1);
+	cursor: pointer;
 }
 /* ------------------------------------------------- */
 /* FIN SKILLS*/
