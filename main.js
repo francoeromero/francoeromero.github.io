@@ -67,9 +67,9 @@ const sr = ScrollReveal ({
 	reset: true
 })
 
-sr.reveal('.home-text, .grid',{delay:190, origin:'bottom'})
+sr.reveal('.home-text, .grid, .skills, .portfolio',{delay:190, origin:'bottom'})
 
-sr.reveal('.about,.services,.portfolio,.contact, .grid',{delay:200, origin:'bottom'})
+sr.reveal('.about, .skills ,.services,.portfolio,.contact, .grid',{delay:200, origin:'bottom'})
 
 
 
