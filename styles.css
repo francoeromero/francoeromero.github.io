@@ -675,7 +675,7 @@ form textarea{
 	
 }
 
-@media (max-width: 970px){
+@media (max-width: 768px){
 	:root{
 		--h1-font: 4.2rem;
 	  --h2-font: 2.9rem;
@@ -736,11 +736,6 @@ form textarea{
 		transition: 0.5s;
 		margin-top: -150px;
 		margin-bottom: -150px;
-	}
-
-	.contact
-	{
-		
 	}
 }
 
@@ -811,4 +806,36 @@ form textarea{
 	{
 		margin-top: 100px;
 	}
+}
+
+@media (max-width: 550px){
+	.home
+	{
+		width: 100vh;
+		text-align: center;
+	}
+	
+	.about
+	{
+		width: 80vh;
+	}
+	.skills
+	{
+		width: 80vh;
+	}
+	.contenedor
+	{
+		width: 80vh;
+	}
+	.contact
+	{
+		width: 80vh;
+	
+	}
+	.last-text
+	{
+	
+		width: 80vh;
+	}
+	
 }
