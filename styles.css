@@ -115,7 +115,6 @@ section{
 	/* font-weight: bold; */
 	line-height: 1.1;
 	letter-spacing: 2px;
-	font-family: ;
 	
 }
 
@@ -344,6 +343,7 @@ header .categorias a.activo {
     /* ESTAS 2 PROPIEDADES DE ABAJO SE COMBINAN CON JS, para que al actualizar la pagina aparescan todas juntas con transicion de opacidad */
     opacity: 0;
     transition: opacity 0.5s linear 1s;
+	border: 6px solid red;
 	
 }
 
@@ -668,10 +668,7 @@ form textarea{
 		margin-top: -100px;
 		margin-bottom: -100px;
 	}
-	.contact
-	{
 	
-	}
 	
 }
 
@@ -716,9 +713,7 @@ form textarea{
 		display: none;
 	}
 	
-	.demoRepo {
-		
-	}
+
 	.icono{
 		font-size: 1.2em;
 	}
