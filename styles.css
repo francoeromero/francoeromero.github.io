@@ -343,7 +343,6 @@ header .categorias a.activo {
     /* ESTAS 2 PROPIEDADES DE ABAJO SE COMBINAN CON JS, para que al actualizar la pagina aparescan todas juntas con transicion de opacidad */
     opacity: 0;
     transition: opacity 0.5s linear 1s;
-	border: 6px solid red;
 	
 }
 
