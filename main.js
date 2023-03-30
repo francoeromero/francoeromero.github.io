@@ -2,7 +2,7 @@
 const grid = new Muuri('.grid', {
 	//el layout se encuentra en el  link, y elegimos rounding de todas las formas que se puede trabajar
 	layout: {
-		rounding: false //para trabajar con medidas exactas
+		rounding: false//para trabajar con medidas exactas
 	}
 });
 

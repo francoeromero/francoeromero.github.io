@@ -371,7 +371,6 @@ header .categorias a.activo {
 
 /* seleccionamos las imagenes especificamente */
 .grid .item img {
-	
 	width: 100%;
 	cursor: pointer;
 	/* sacar el margen por defecto que tiene las imagenes */
