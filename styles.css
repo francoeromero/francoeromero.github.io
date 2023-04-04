@@ -242,7 +242,7 @@ span{
 }
 .skill img:hover {
 	filter: saturate(1);
-	cursor: pointer;
+	
 }
 /* ------------------------------------------------- */
 /* FIN SKILLS*/
