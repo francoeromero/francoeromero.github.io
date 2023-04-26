@@ -696,6 +696,9 @@ form textarea{
 
 
 @media (max-width: 1325px){
+	.home{
+		width: 100vh;
+	}
 	#header{
 		padding: 16px 3%;
 	}
