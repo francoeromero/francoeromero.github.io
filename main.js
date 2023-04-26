@@ -1,10 +1,25 @@
+const clips = document.querySelectorAll('.clips');
+
+for(let i = 0; i < clips.length; i++){
+	clips[i].addEventListener('mouseenter', function(e){
+		if (clips[i].paused) {
+			clips[i].play();
+		}
+	});
+
+	clips[i].addEventListener('mouseout', function(e){
+		if(!clips[i].paused) clips[i].pause();
+	});
+}
+
 // inicializo con la libreria MUURI, y seleccionamos a la clase grid del html #5 https://github.com/haltu/muuri
 const grid = new Muuri('.grid', {
 	//el layout se encuentra en el  link, y elegimos rounding de todas las formas que se puede trabajar
 	layout: {
 		rounding: false//para trabajar con medidas exactas
-	}
-});
+	}	
+});	
+
 
 // INICIO configuracion para que aparescan las imagenes juntas en opacidad CSS Linea 91
 window.addEventListener('load', () => {
@@ -83,19 +98,19 @@ document.querySelectorAll(".gallery__img img").forEach(el=>{
 
 //video
 
-const clips = document.querySelectorAll('.clip');
+// const clips = document.querySelectorAll('.clips');
 
-for(let i = 0; i < clips.length; i++){
-    clips[i].addEventListener('mouseenter', function(e){
-        if (clips[i].paused) {
-            clips[i].play();
-        }
-    });
+// for(let i = 0; i < clips.length; i++){
+//     clips[i].addEventListener('mouseenter', function(e){
+//         if (clips[i].paused) {
+//             clips[i].play();
+//         }
+//     });
 
-	clips[i].addEventListener('mouseout', function(e){
-        if(!clips[i].paused) clips[i].pause();
-    });
-}
+// 	clips[i].addEventListener('mouseout', function(e){
+//         if(!clips[i].paused) clips[i].pause();
+//     });
+// }
 
 // const clip = document.querySelectorAll('.clip');
 

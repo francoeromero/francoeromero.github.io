@@ -257,6 +257,9 @@ span{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	/* border: 5px solid red; */
+	margin-bottom: 0;
+	/* margin-top: 120px; */
 }
 
 	
@@ -335,33 +338,107 @@ header .categorias a.activo {
 /* Grid IMAGENES utilizamos una libreria o framework llamada MUURI*/
 /* ------------------------- */
 
-
-.grid {
-	
-    position: relative;
-    width: 100%;
-    /* ESTAS 2 PROPIEDADES DE ABAJO SE COMBINAN CON JS, para que al actualizar la pagina aparescan todas juntas con transicion de opacidad */
-    opacity: 0;
-    transition: opacity 0.5s linear 1s;
-	
+.titulo_portafolio{
+	text-align: center;
+	font-size: 2em;
 }
+
+.grilla{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: center;
+	margin: -100px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	grid-gap: 5px;
+}
+
+.item:nth-child(1){
+	grid-column-start: span 3;
+	grid-row-start: span 1;
+	border-radius: 4%;
+}
+
+.item:nth-child(2){
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+	border-radius: 4%;
+}
+
+.item:nth-child(3){
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+	border-radius: 4%;
+
+}
+.item:nth-child(4){
+
+}
+.item:nth-child(5){
+
+}
+.item:nth-child(6){
+	/* border: 5px solid red; */
+	/* background-size: 1000px 1000px; */
+	object-fit: cover;
+	box-sizing: content-box;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	border-radius: 4%;
+}
+.item:nth-child(7){
+	/* border: 5px solid red; */
+	/* background-size: 1000px 1000px; */
+	object-fit: cover;
+	box-sizing: content-box;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	border-radius: 4%;
+}
+
+
+video{
+	width: 500px;
+	height: 500px;
+	border-radius: 4%;
+	margin: 2px;
+	filter: grayscale(1);
+}
+
+video:hover {
+    filter: grayscale(0);
+	transition: 0.9s;
+}
+
+/* .grid { */
+	
+    /* position: relative;
+    width: 100%; */
+    /* ESTAS 2 PROPIEDADES DE ABAJO SE COMBINAN CON JS, para que al actualizar la pagina aparescan todas juntas con transicion de opacidad */
+    /* opacity: 0;
+    transition: opacity 0.5s linear 1s; */
+	
+/* } */
 
 /* CREAMOS ESTO PARA JS PARA QUE FUNCIONE */
-.grid.imagenes-cargadas {
-    opacity: 1; /*PARA QUE APARESCAN LAS IMAGENES */
-}
+/* .grid.imagenes-cargadas { */
+    /*opacity: 1; /*PARA QUE APARESCAN LAS IMAGENES */
+/* } */
 
 
 /* seleccionamos el contenedor item que contiene todas las imagenes */
-.grid .item {
-	position: absolute;
+/* .grid .item { */
+	/* position: absolute;
 	display: block;
 	padding: 0;
-	margin: 10px;
+	margin: 10px; */
 	/* utilizo calc, que es calcular el 33% de ancho menos 20px  para que entren 3 imagenes enfilados*/
-	width: calc(33.333333% - 20px); 
+	/* width: calc(33.333333% - 20px);  */
 	
-}
+/* } */
 /* esto lo pide MUURI el contenido mas cerca de las imagenes sea relative */
 .grid .item-contenido {
 	position: relative;
@@ -396,27 +473,26 @@ header .categorias a.activo {
 
 /* videos */
 /* seleccionamos las imagenes especificamente */
-.grid .item video {
-	
+/* .grid .item video {
 	width: 100%;
-	cursor: pointer;
+	cursor: pointer; */
 	/* sacar el margen por defecto que tiene las imagenes */
-	vertical-align: top; 
+	/* vertical-align: top; 
 	border-radius: 10px;
     border-bottom-right-radius: 0%;
     border-bottom-left-radius: 0%;
 	background-color: #080707;
 	z-index: -1;
     filter: grayscale(1);
-}
-
+} */
+/* 
 .grid .item video:hover {
     filter: grayscale(0);
 	/* scale: 1.01; */
 	transition: 0.9s;
 	/* background-image: (90deg, rgba(81,38,167,0.8), rgba(90,60,149,0.7)),
 	url(/page/imgPage/portfolio1.jpg); */
-} 
+/* }   */
 
 
 
@@ -490,7 +566,7 @@ header .categorias a.activo {
 	align-items: center;
 	gap: 3rem;
 	width: 100%;
-	margin-top: 50%;
+	margin-top: 0%;
 	
 }
 .contact-text h4{
