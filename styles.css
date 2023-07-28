@@ -1222,7 +1222,7 @@ margin-right: auto; */
     @media (max-width: 1500px){
       /* HOME END */
       .content-ciudad{
-        display: none;
+        right: 1rem;
       }
       .content-transicion{
         align-items: flex-start;
@@ -1230,17 +1230,24 @@ margin-right: auto; */
       }
       .texto1,.texto2,.texto3{
         font-size: 3rem;
+
       }
       .texto4{
         font-size: 1.5rem;
         top: 16rem;
+        z-index: 8;
+
       }
       .texto5{
         font-size: 1.2rem;
         top: 18rem;
+        z-index: 8;
+
       }
       .boton{
         top: 20rem;
+        z-index: 8;
+
       }
       .home,
       .aboutMe,
@@ -1283,6 +1290,9 @@ margin-right: auto; */
     }
     @media (max-width: 900px){
       /* HOME */
+      .content-ciudad{
+        right: 1rem;
+      }
       .content-transicion{
         align-items: flex-start;
         justify-content: flex-end;
@@ -1349,6 +1359,10 @@ margin-right: auto; */
     
     @media (max-width: 600px){
       /* HOME */
+      .content-ciudad{
+        /* left: 1rem; */
+        right: -5rem;
+      }
       .content-transicion{
         align-items: flex-start;
         justify-content: flex-end;

@@ -26,11 +26,11 @@
       const cascoAnimado = document.querySelector('.cascoAnimado');
       const engranajeAnimado = document.querySelector('.engranajeAnimado');
       const textoIcono = document.querySelector('.textoIcono');
-      const skl = document.querySelector('.skl');
+      const skl = document.querySelectorAll('.skl');
 
-      skl.onmouseover = () =>{
-        console.log('aaa')
-      }
+      // skl.onmouseover = () =>{
+      //   console.log('aaa')
+      // }
 
 
 
