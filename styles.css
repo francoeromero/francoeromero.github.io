@@ -1155,6 +1155,10 @@
   overflow: hidden;
   border-radius: 20%;
 }
+.skl:hover{
+  background: #090909;
+  transition: 0.5s;
+}
 .skl img{
   border-radius: 10px;
 }
