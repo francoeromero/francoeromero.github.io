@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+          display: flex;
+          justify-content: center;
+          align-items: center;  
+          flex-direction: row;
+          background: rgb(58, 58, 58);
+          height: 100vh;
+        }
+        .elemento{
+            width: 5rem;
+            height: 5rem;
+            background: gray;
+            border: 2px solid black;
+            margin-right: 1rem;
+            cursor: pointer;
+        }
+        .activo {
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="elemento activo"></div>
+    <div class="elemento reposo"></div>
+    <div class="elemento reposo"></div>
+    <div class="elemento reposo"></div>
+    <div class="elemento reposo"></div>
+    <script>
+        const elementos = document.querySelectorAll('.elemento');
+        
+        for(let i = 0; i < elementos.length; i++){
+            elementos[i].addEventListener('click', function(){
+                // eliminamos todos los elementos que tenga 'activo'
+                elementos.forEach((e) => {
+                    e.classList.remove('activo');
+                })
+                // el que se dio click se agrega 'activo'
+                elementos[i].classList.add('activo');
+            })
+        }
+
+        
+    </script>
+</body>
+</html>
