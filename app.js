@@ -25,12 +25,18 @@
       const contentLogoAnimado = document.querySelector('.content-logoAnimado');
       const cascoAnimado = document.querySelector('.cascoAnimado');
       const engranajeAnimado = document.querySelector('.engranajeAnimado');
-      const textoIcono = document.querySelector('.textoIcono');
+      const textIcono = document.querySelectorAll('.textIcono');
       const skl = document.querySelectorAll('.skl');
 
-      // skl.onmouseover = () =>{
-      //   console.log('aaa')
-      // }
+      skl.forEach((e, i) => {
+        e.onmouseover = () => {
+          textIcono[i].style.display = 'block';
+        };
+
+        e.onmouseout = () => {
+          textIcono[i].style.display = 'none';
+        }
+      })
 
 
 

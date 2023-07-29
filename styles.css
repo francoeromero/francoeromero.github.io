@@ -184,7 +184,7 @@
           right: 15rem;
           bottom: -10rem;
         }
-    }
+ skew   }
 
     @keyframes forma3 {
       0% {
@@ -249,7 +249,7 @@
     .texto4{
         position: absolute;
         color: white;
-        top: 17rem;
+        top: 15rem;
         left: 8.8rem;
         font-size: 2rem;
         /* font-family: 'Zen Tokyo Zoo', cursive; */
@@ -266,7 +266,7 @@
     .texto5{
       position: absolute;
       color: #eaeaea;
-      top: 20rem;
+      top: 18rem;
       left: 8.9rem;
       font-size: 2rem;
       font-weight: 100;
@@ -281,7 +281,7 @@
         align-items: center;
         justify-content: center;
         position: absolute;
-        top: 25rem;
+        top: 22rem;
         left: 8.8rem;
         width: 15rem;
         height: 2.5rem;
@@ -873,6 +873,14 @@
         transform: rotate(-360deg);
         }
       }
+    @keyframes girarCorto{
+      from{
+        transform: rotate(0deg);
+      }
+      to{
+        transform: rotate(360deg);
+        }
+      }
 
     /* ABOUT FIN */
 
@@ -959,7 +967,7 @@
       position: absolute;
       width: 100px;
       height: 80px;
-      background: rgb(91, 91, 91);
+      background: rgb(181, 181, 181);
       border-radius: 50%;
       opacity: 1;
       left: 1rem;
@@ -972,7 +980,7 @@
       position: absolute;
       width: 100px;
       height: 80px;
-      background: rgb(113, 113, 113);
+      background: rgb(196, 196, 196);
       border-radius: 50%;
       opacity: 1;
       right: 2rem;
@@ -1163,6 +1171,7 @@
   border-radius: 10px;
 }
 .textIcono{
+  display: none;
   font-size: 1rem;
   color: white;
   font-family: sans-serif;
@@ -1362,6 +1371,9 @@ margin-right: auto; */
       .content-ciudad{
         /* left: 1rem; */
         right: -5rem;
+      }
+      .ciudad{
+        width: 45rem;
       }
       .content-transicion{
         align-items: flex-start;
