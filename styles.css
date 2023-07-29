@@ -27,7 +27,7 @@
       bottom: 0;
       right:  0;
       z-index: 0;
-      filter: saturate(.5);
+      filter: saturate(.4);
       /* opacity: 0.9; */
       animation: zoom 45s infinite linear;
     }
