@@ -1433,6 +1433,106 @@ margin-right: auto; */
       }
     }
  
+    
+    @media (max-width: 400px){
+      /* HOME */
+      .textos{
+        width: 120%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .content-ciudad{
+        /* left: 1rem; */
+        right: -5rem;
+      }
+      .ciudad{
+        width: 45rem;
+      }
+      .content-transicion{
+        align-items: flex-start;
+        justify-content: flex-end;
+      }
+      .texto1,.texto2,.texto3{
+        font-size: 1rem;
+        text-align: center;
+        width: 50%;
+      }
+
+    
+      .texto4{
+        font-size: 1rem;
+        text-align: center;
+        top: 14rem;
+        left: 8rem;
+      }
+      .texto5{
+        text-align: center;
+        font-size: 0.8rem;
+        top: 17rem;
+        left: 4rem;
+        width: 100%;
+      }
+      .boton{
+        top: 20rem;
+        left: 6rem;
+        scale: 0.8;
+      }
+      /* HOME END */
+      /* PROJECTS */
+      .content-projects{
+        grid-template-columns: repeat(1, 200px);
+        margin-left: -3rem;
+      }
+      .forma-projects{
+        transform: skewX(0deg);
+      }
+      .elemento2{
+        transform: skewX(-10deg);
+      }
+      .elemento5 img{
+        transform: skewX(0deg);
+      }
+      /* ABOUT */
+      .tituloAbout{
+        bottom: -1rem;
+        left: 3rem;
+        font-size: 2rem;
+      }
+      .foto{
+        scale: .7;
+        left: 2rem;
+        bottom: 3rem;
+      }
+      .textoAbout{
+        width:10rem;
+        font-size: 0.7rem;
+        position: absolute;
+        right: 5rem;
+
+        margin-left: 4rem;
+      }
+      /* PROJECTS */
+      .tituloProjects{
+        font-size: 2rem;
+      }
+      /* SKILLS */
+      .prueba{
+        top: 50rem;
+      }
+      .grid-design-skills{
+        grid-template-columns: repeat(2,140px);
+      }
+      
+      .grid-skills{
+        grid-template-columns: repeat(2,140px);
+      }
+      .titleDesignSkills{
+        display: none;
+      }
+    }
+ 
 
         
 
