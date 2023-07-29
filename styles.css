@@ -1243,6 +1243,7 @@ margin-right: auto; */
       .content-transicion{
         align-items: flex-start;
         justify-content: flex-end;
+        position: fixed;
       }
       .texto1,.texto2,.texto3{
         font-size: 3rem;
