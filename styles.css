@@ -1033,6 +1033,7 @@
       left: 0;
       z-index: 10;
       border-radius: 10px;
+      
     }
     /* el titulo del proyecto */
     .elemento1 p {
@@ -1040,6 +1041,7 @@
       font-size: 1.8rem;
       font-weight: bold;
       transform: skewX(-10deg);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); 
     }
 /* CONTENEDOR CODE GITHUB */
     .elemento2{
@@ -1061,7 +1063,7 @@
     .elemento2 i:hover{
       transform: skewX(10deg);
       color: rgb(0, 0, 0);
-      scale: 2.2;
+      scale: 2.5;
       transition: 0.8s;
       /* animation: girar 0.5s 1; */
     }
