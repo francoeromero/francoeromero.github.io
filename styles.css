@@ -13,7 +13,7 @@
     }
     .content-ciudad{
       width: 60rem;
-      height: 40rem;
+      height: 50rem;
       /* border: 2px solid red; */
       position: absolute;
       bottom: 0;
@@ -22,7 +22,7 @@
     }
     .ciudad {
       position: absolute;
-      width: 45rem;
+      width: 55rem;
       height: 40rem;
       bottom: 0;
       right:  0;
