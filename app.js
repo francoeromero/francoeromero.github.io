@@ -28,6 +28,31 @@
       const textIcono = document.querySelectorAll('.textIcono');
       const skl = document.querySelectorAll('.skl');
 
+
+      setTimeout(function(){
+        contentTransicion.style.display = 'flex';
+        contentLogoAnimado.style.display = 'flex';
+        transicion.style.animation = 'transicion 1.6s ease-in-out';
+        cascoAnimado.style.animation = 'cascoAnimado 1.7s 1';
+        engranajeAnimado.style.animation = 'engranajeAnimado 2s 1';
+      },10)
+      setTimeout(function(){
+        ABOUT.style.display = 'none';
+        HOME.style.display = 'block';
+        PROJECTS.style.display = 'none';
+        SKILLS.style.display = 'none';
+        CERTIFICATES.style.display = 'none';
+        cursor.style.display = 'block';
+      },1200)
+      setTimeout(function(){
+        transicion.style.animation = 'none';
+        contentTransicion.style.display = 'none';
+        contentLogoAnimado.style.display = 'none';
+        cascoAnimado.style.animation = 'none';
+        engranajeAnimado.style.animation = 'none';
+        engranaje.style.animation = 'engranaje 6s infinite linear';
+      },1600)
+
       skl.forEach((e, i) => {
         e.onmouseover = () => {
           textIcono[i].style.display = 'block';
@@ -143,7 +168,16 @@
               texto3.style.animation = 'none';
           }, 2000)
       }
-
+      logo.forEach((e)=>{
+        e.addEventListener('click', function(){
+          ABOUT.style.display = 'none';
+          HOME.style.display = 'block';
+          PROJECTS.style.display = 'none';
+          SKILLS.style.display = 'none';
+          CERTIFICATES.style.display = 'none';
+          cursor.style.display = 'block';
+        })
+      })
 // EVENTO AL PASAR EL MOUSE POR EL MENU 
 circulos.forEach((circle) => {
 circle.addEventListener('mouseover', () => {
@@ -222,6 +256,7 @@ circulos.forEach(function(elemento, index) {
         cursor.style.display = 'block';
       break;
     }
+
   },1200)
   setTimeout(function(){
     transicion.style.animation = 'none';
@@ -360,3 +395,4 @@ phone.addEventListener('click', function(e){
   e.preventDefault();
   window.open('http://wa.link/d80sr2');
 });
+
