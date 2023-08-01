@@ -1164,7 +1164,7 @@
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
-  border-radius: 20%;
+  border-radius: 35%;
 }
 .skl:hover{
   background: #090909;
