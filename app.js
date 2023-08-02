@@ -29,59 +29,12 @@
       const skl = document.querySelectorAll('.skl');
 
 
-
-
       logo.forEach((e)=>{
         e.addEventListener('click', function(){
-          setTimeout(function(){
-          contentTransicion.style.display = 'flex';
-          contentLogoAnimado.style.display = 'flex';
-          transicion.style.animation = 'transicion 1.6s ease-in-out';
-          cascoAnimado.style.animation = 'cascoAnimado 1.7s 1';
-          engranajeAnimado.style.animation = 'engranajeAnimado 2s 1';
-      },10)
-      setTimeout(function(){
-        ABOUT.style.display = 'none';
-        HOME.style.display = 'block';
-        PROJECTS.style.display = 'none';
-        SKILLS.style.display = 'none';
-        CERTIFICATES.style.display = 'none';
-        cursor.style.display = 'block';
-      },1200)
-      setTimeout(function(){
-        transicion.style.animation = 'none';
-        contentTransicion.style.display = 'none';
-        contentLogoAnimado.style.display = 'none';
-        cascoAnimado.style.animation = 'none';
-        engranajeAnimado.style.animation = 'none';
-        engranaje.style.animation = 'engranaje 6s infinite linear';
-      },1600)
+          window.location.reload();
         })
       })
 
-      // setTimeout(function(){
-      //   contentTransicion.style.display = 'flex';
-      //   contentLogoAnimado.style.display = 'flex';
-      //   transicion.style.animation = 'transicion 1.6s ease-in-out';
-      //   cascoAnimado.style.animation = 'cascoAnimado 1.7s 1';
-      //   engranajeAnimado.style.animation = 'engranajeAnimado 2s 1';
-      // },10)
-      // setTimeout(function(){
-      //   ABOUT.style.display = 'none';
-      //   HOME.style.display = 'block';
-      //   PROJECTS.style.display = 'none';
-      //   SKILLS.style.display = 'none';
-      //   CERTIFICATES.style.display = 'none';
-      //   cursor.style.display = 'block';
-      // },1200)
-      // setTimeout(function(){
-      //   transicion.style.animation = 'none';
-      //   contentTransicion.style.display = 'none';
-      //   contentLogoAnimado.style.display = 'none';
-      //   cascoAnimado.style.animation = 'none';
-      //   engranajeAnimado.style.animation = 'none';
-      //   engranaje.style.animation = 'engranaje 6s infinite linear';
-      // },1600)
 
       skl.forEach((e, i) => {
         e.onmouseover = () => {
@@ -310,6 +263,9 @@ circulos.forEach(function(elemento, index) {
     }
   });
 });
+
+
+
 
 // Simular clic en el primer elemento
 if (index === 0) {

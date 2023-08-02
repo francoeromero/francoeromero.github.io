@@ -348,7 +348,7 @@
     .logo{
       top: 0.4rem;
       left: 0.4rem;
-      /* cursor: pointer; */
+      cursor: pointer;
       animation: girarRapido 10s infinite linear;
 
     }
