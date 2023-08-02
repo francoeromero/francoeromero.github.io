@@ -375,3 +375,19 @@ phone.addEventListener('click', function(e){
   window.open('http://wa.link/d80sr2');
 });
 
+// CARRUSEL
+
+const carrusel = document.querySelector('.carrusel-items');
+
+let intervalo = null;
+let step = 1;
+const start = () =>{
+  intervalo = setInterval(function(){
+    carrusel.scrollLeft += step;
+  },10)
+}
+
+const stop = () =>{
+
+} 
+start();
