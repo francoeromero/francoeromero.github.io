@@ -377,23 +377,23 @@ phone.addEventListener('click', function(e){
 
 // CARRUSEL
 
-const carrusel = document.querySelector('.carrusel-items');
+// const carrusel = document.querySelector('.carrusel-items');
 
-let intervalo = null;
-let velocidad = 1;
+// let intervalo = null;
+// let velocidad = 1;
 
-const start = () =>{
+// const start = () =>{
     
-  setInterval(function(){
-    carrusel.scrollLeft += velocidad;
-  },10);
-  setTimeout(function(){
-    velocidad = -1;
-  },25000)
+//   setInterval(function(){
+//     carrusel.scrollLeft += velocidad;
+//   },10);
+//   setTimeout(function(){
+//     velocidad = -1;
+//   },25000)
 
-}
+// }
 
-const stop = () =>{
+// const stop = () =>{
 
-} 
-start();
+// } 
+// start();
