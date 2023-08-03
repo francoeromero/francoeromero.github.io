@@ -1231,11 +1231,23 @@ margin-right: auto; */
   align-items: center;
   position: relative;
 } */
-.tituloCertificates{
-  top: 6rem;
-  left: 4rem;
-  margin: 5rem;
+.content-titulo-certificates{
+  width: 100%;
+  height: 100px;
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 9.2rem;
+}
+.tituloCertificates{
+  /* top: 6rem;
+  left: 4rem;
+  margin: 5rem; */
+  /* display: block;
+  margin-left: auto;
+  margin-right: auto; */
+  /* position: absolute; */
   font-family: 'Zen Tokyo Zoo', cursive;
   font-size: 3rem;
   font-style: italic;
@@ -1244,7 +1256,8 @@ margin-right: auto; */
 .carrusel-items{
   padding-top: 15rem;
   display: flex;
-  overflow-x: scroll;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .carrusel-item{
   min-width: 400px;
