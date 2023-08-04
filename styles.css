@@ -75,7 +75,7 @@
     }
 /* FIN CONFIG GLOBAL */
 /*///////// SECTION HOME ////////// */
-.tituloAbout:hover{
+.tituloAbout:hover, .tituloCertificates:hover, .tituloProjects:hover, .tituloSkills:hover{
   font-family: 'Zen Tokyo Zoo', cursive;
   color: #0b0b0b;
   transition: 1s;
@@ -524,7 +524,7 @@
       content: '';
       position: absolute;
       height: 1px;
-      left: 11rem;
+      left: 13rem;
       width: 200rem;
       bottom: 0.5rem;
       background: white;
@@ -533,7 +533,7 @@
       content: '';
       position: absolute;
       height: 1px;
-      right: 11rem;
+      right: 13rem;
       width: 200rem;
       bottom: 0.5rem;
       background: white;
@@ -917,6 +917,7 @@
       top: 10rem;
       position: absolute;
     }
+
     .parrafoProjects{
       color: rgb(185, 185, 185);
       width: 105%;
@@ -1265,6 +1266,7 @@ margin-right: auto; */
   font-style: italic;
   color: rgb(173, 173, 173);
 }
+
 .carrusel-items{
   padding-top: 15rem;
   position: absolute;
