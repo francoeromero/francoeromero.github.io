@@ -75,7 +75,16 @@
     }
 /* FIN CONFIG GLOBAL */
 /*///////// SECTION HOME ////////// */
-
+.tituloAbout:hover{
+  font-family: 'Zen Tokyo Zoo', cursive;
+  color: #0b0b0b;
+  transition: 1s;
+  text-shadow: 
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    1px 1px 0 white,
+    -1px 1px 0 white;
+}
     .circulo1{
       display: none;
       width: 350px;
