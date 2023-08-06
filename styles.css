@@ -487,6 +487,7 @@
 
     .textoCircle{
       position: absolute;
+      width: 5rem;
       top: 3.1rem;
       left: .6rem;
       color: white;
