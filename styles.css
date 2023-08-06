@@ -1300,6 +1300,8 @@ margin-right: auto; */
   top: 9.2rem;
 }
 .tituloCertificates{
+  padding-right: 30rem;
+  padding-left: 30rem;
   z-index: 8;
   margin-top: -10rem;
   font-family: 'Zen Tokyo Zoo', cursive;
@@ -1505,6 +1507,14 @@ margin-right: auto; */
       }
       .grid-skills{
         grid-template-columns: repeat(2,200px);
+      }
+
+      /* certificates */
+      .tituloCertificates{
+        font-size: 2.5rem;
+        padding-left: 10rem;
+        padding-right: 10rem;
+        text-align: center;
       }
     }
     
