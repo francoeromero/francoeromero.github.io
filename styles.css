@@ -4,6 +4,7 @@
     }
     body{
       overflow-x: hidden;
+      overflow-y: hidden;
     }
     #particles-js{
         background-color: #000000;
@@ -14,14 +15,16 @@
         top: 0;
         z-index: -1;
     }
+
     .content-ciudad{
       width: 60rem;
-      height: 50rem;
-      /* border: 2px solid red; */
+      height: 40rem;
       position: absolute;
       bottom: 0;
       right:  0;
       overflow: hidden;
+      /* border: 2px solid red; */
+      z-index: 0;
     }
     .ciudad {
       position: absolute;
@@ -31,15 +34,15 @@
       right:  0;
       z-index: 0;
       filter: saturate(.5);
-      /* opacity: 0.9; */
       animation: zoom 45s infinite linear;
+      /* opacity: 0.9; */
     }
     @keyframes zoom {
       0%,100%{
-        scale: 0.98;
+        scale: 1;
       }
       50%{
-        scale: 1.18;
+        scale: 1.2;
       }
     }
     

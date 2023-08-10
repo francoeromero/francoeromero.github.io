@@ -198,6 +198,7 @@ circulos.forEach(function(elemento, index) {
         SKILLS.style.display = 'none';
         CERTIFICATES.style.display = 'none';
         cursor.style.display = 'block';
+        document.body.style.overflowY = 'hidden';
       break;
       case 'aboutMe active':
         ABOUT.style.display = 'block';
@@ -206,6 +207,7 @@ circulos.forEach(function(elemento, index) {
         SKILLS.style.display = 'none';
         CERTIFICATES.style.display = 'none';
         cursor.style.display = 'block';
+        document.body.style.overflowY = 'visible';
       break;
       case 'projects active':
         ABOUT.style.display = 'none';
@@ -214,6 +216,7 @@ circulos.forEach(function(elemento, index) {
         SKILLS.style.display = 'none';
         CERTIFICATES.style.display = 'none';
         cursor.style.display = 'none';
+        document.body.style.overflowY = 'visible';
       break;
       case 'skills active':
         ABOUT.style.display = 'none';
@@ -222,6 +225,7 @@ circulos.forEach(function(elemento, index) {
         SKILLS.style.display = 'block';
         CERTIFICATES.style.display = 'none';
         cursor.style.display = 'none';
+        document.body.style.overflowY = 'visible';
       break;
       default:
         ABOUT.style.display = 'none';
@@ -230,6 +234,7 @@ circulos.forEach(function(elemento, index) {
         SKILLS.style.display = 'none';
         CERTIFICATES.style.display = 'block';
         cursor.style.display = 'block';
+        document.body.style.overflowY = 'visible';
       break;
     }
 
