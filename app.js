@@ -5,7 +5,7 @@
       const PROJECTS = document.getElementById('projects');
       const SKILLS = document.getElementById('skills');
       const CERTIFICATES = document.getElementById('certificates');
-
+      // elementos DOM gral
       const texto1 = document.querySelector('.texto1');
       const texto2 = document.querySelector('.texto2');
       const texto3 = document.querySelector('.texto3');
@@ -323,37 +323,6 @@ contactos.forEach(function(elemento) {
 
         });
       });
-// let clases = formaContacto[i].className.split(' ')
-// console.log(formaContacto[i])
-
-// let clases = e.className.split(' ');
-// console.log()
-// formaContacto.style.background = 'red';
-
-// contactos.forEach((e) => {
-//   e.onmouseover = () => {
-//     setTimeout(function(){
-//       formaContacto.forEach(function(e){
-//         e.style.background = 'rgb(107, 26, 97)';
-//         e.style.transition = '1s';
-//       })
-//       formaContactoSegundo.forEach(function(e){
-//         e.style.background = 'rgb(41, 75, 126)';
-//         e.style.transition = '1s';
-//       })
-//     }, 10)
-//     setTimeout(function(){
-//       formaContacto.forEach(function(e){
-//         e.style.background = 'white';
-//         e.style.transition = '1s';
-//       })
-//       formaContactoSegundo.forEach(function(e){
-//         e.style.background = 'white';
-//         e.style.transition = '1s';
-//       })
-//     }, 10000)
-//   }
-// })
 
 const linkedin = document.querySelector('.linkedin');
 const github = document.querySelector('.github');
@@ -380,25 +349,3 @@ phone.addEventListener('click', function(e){
   window.open('http://wa.link/d80sr2');
 });
 
-// CARRUSEL
-
-// const carrusel = document.querySelector('.carrusel-items');
-
-// let intervalo = null;
-// let velocidad = 1;
-
-// const start = () =>{
-    
-//   setInterval(function(){
-//     carrusel.scrollLeft += velocidad;
-//   },10);
-//   setTimeout(function(){
-//     velocidad = -1;
-//   },25000)
-
-// }
-
-// const stop = () =>{
-
-// } 
-// start();
