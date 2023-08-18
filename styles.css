@@ -752,12 +752,7 @@
       }
     }
     /* /////////////// */
-    
     /* /////// SECTION ABOUT ME //////// */
-  
-
-  
-
     /* contenedor de todo */
     #about{
       width: 100%;
@@ -809,8 +804,6 @@
       z-index: 7;
     }
    
-
-
     /* elementos */
     /* el titulo */
     .tituloAbout{
@@ -1196,18 +1189,7 @@ font-size: 1rem;
 font-style: italic;
 text-align: center;
 font-weight: bold;
-/* display: block;
-margin-left: auto;
-margin-right: auto; */
-
-
-
-  /* font-size: 3rem;
-  transform: skewX(-10deg);
-  color: white;
-  font-family: 'Zen Tokyo Zoo', cursive; */
-
-  margin-bottom: 1rem;
+margin-bottom: 1rem;
 }
 .prueba{
   width: 100%;
@@ -1226,15 +1208,7 @@ margin-right: auto; */
 }
 /* ///////////////////////// */
 /* CERTIFICADOS */
-/* .section-certificates{
-  width: 100%;
-  height: 100%;
-  border: 20px solid red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-} */
+
 .content-titulo-certificates{
   width: 100%;
   height: 500px;
@@ -1287,15 +1261,11 @@ margin-right: auto; */
 }
 
 .linea-carrusel1{
-  /* position: absolute;
-  top: 14rem; */
   height: .2rem;
   width: 100%;
   margin-top: -18rem;
 }
 .linea-carrusel2{
-  /* position: absolute;
-  top: 34.5rem; */
   height: .2rem;
   width: 100%;
   margin-bottom: -4rem;
