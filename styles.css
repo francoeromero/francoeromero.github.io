@@ -23,7 +23,6 @@
       bottom: 0;
       right:  0;
       overflow: hidden;
-      /* border: 2px solid red; */
       z-index: 0;
     }
     .ciudad {
@@ -35,7 +34,6 @@
       z-index: 0;
       filter: saturate(.5);
       animation: zoom 45s infinite linear;
-      /* opacity: 0.9; */
     }
     @keyframes zoom {
       0%,100%{
