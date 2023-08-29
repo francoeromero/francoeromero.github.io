@@ -257,17 +257,13 @@
     }
     @keyframes botonBorde {
       0%, 100%{
-        /* background: transparent; */
         box-shadow: none;
-        /* border: 2px solid white; */
       }
       50%{
-        /* border: 2px solid black; */
         background: #1d496b;
         box-shadow: 0 0 20px rgba(38, 150, 232, 0.2),
         0 0 60px rgba(38, 150, 232, 0.2),
         0 0 100px rgba(38, 150, 232, 0.2);
-        /* opacity: 0.2; */
       }
     }
     .boton::before{
@@ -280,7 +276,6 @@
       left: -15rem;
       top: -1rem;
       width: 15rem;
-      /* animation: botonProyectos 1s ease; */
     }
     .boton:hover::before{
       transform: translateX(100%);
@@ -297,9 +292,6 @@
       font-family:  'Courier New', Courier, monospace;
       font-weight: bold;
     }
-
-
- 
 
     /* /////  LOGO /////// */
     .logo{
