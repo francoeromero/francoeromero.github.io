@@ -3,6 +3,7 @@
       const HOME = document.getElementById('home');
       const ABOUT= document.getElementById('about');
       const PROJECTS = document.getElementById('projects');
+      const ARCH = document.getElementById('arch');
       const SKILLS = document.getElementById('skills');
       const CERTIFICATES = document.getElementById('certificates');
       // elementos DOM gral
@@ -195,6 +196,7 @@ circulos.forEach(function(elemento, index) {
         ABOUT.style.display = 'none';
         HOME.style.display = 'block';
         PROJECTS.style.display = 'none';
+        ARCH.style.display = 'none';
         SKILLS.style.display = 'none';
         CERTIFICATES.style.display = 'none';
         cursor.style.display = 'block';
@@ -204,6 +206,7 @@ circulos.forEach(function(elemento, index) {
         ABOUT.style.display = 'block';
         HOME.style.display = 'none';
         PROJECTS.style.display = 'none';
+        ARCH.style.display = 'none';
         SKILLS.style.display = 'none';
         CERTIFICATES.style.display = 'none';
         cursor.style.display = 'block';
@@ -213,6 +216,17 @@ circulos.forEach(function(elemento, index) {
         ABOUT.style.display = 'none';
         HOME.style.display = 'none';
         PROJECTS.style.display = 'block';
+        ARCH.style.display = 'none';
+        SKILLS.style.display = 'none';
+        CERTIFICATES.style.display = 'none';
+        cursor.style.display = 'none';
+        document.body.style.overflowY = 'visible';
+      break;
+      case 'arch active':
+        ABOUT.style.display = 'none';
+        HOME.style.display = 'none';
+        PROJECTS.style.display = 'none';
+        ARCH.style.display = 'block';
         SKILLS.style.display = 'none';
         CERTIFICATES.style.display = 'none';
         cursor.style.display = 'none';
@@ -222,6 +236,7 @@ circulos.forEach(function(elemento, index) {
         ABOUT.style.display = 'none';
         HOME.style.display = 'none';
         PROJECTS.style.display = 'none';
+        ARCH.style.display = 'none';
         SKILLS.style.display = 'block';
         CERTIFICATES.style.display = 'none';
         cursor.style.display = 'none';
@@ -230,6 +245,7 @@ circulos.forEach(function(elemento, index) {
       default:
         ABOUT.style.display = 'none';
         HOME.style.display = 'none';
+        ARCH.style.display = 'none';
         PROJECTS.style.display = 'none';
         SKILLS.style.display = 'none';
         CERTIFICATES.style.display = 'block';

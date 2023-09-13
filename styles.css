@@ -43,14 +43,88 @@
         scale: 1.2;
       }
     }
-    
+    /* ARCH */
+    .section-arch{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid transparent;
+    }
+    .tituloArch{
+      color: wheat;
+      border: 2px solid red;
+    }
+    .flex{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15rem;
+    }
+    .grid{
+      display: grid;
+      grid-gap: .5rem;
+      grid-template-columns: 1fr 1fr ;
+    }
+    .img{
+      width: 20rem;
+      height: 10rem;
+      border-radius: 50px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .img1{
+      background-image: url(./img/arch/01_posproduccion.jpg);
+    }
+    .img2{
+      background-image: url(./img/arch/Aula_sensorial.jpg);
+    }
+    .img3{
+      background-image: url(./img/arch/CasaInterior.jpg);
+    }
+    .img4{
+      background-image: url(./img/arch/Iglesia_Elencuentro.jpg);
+    }
+    .img1:hover, .img2:hover, .img3:hover, .img4:hover{
+      transition: 1s;
+    }
+
+
+    .tamaño{
+      width: 30rem;
+      height: 10rem;
+    }
+    .textoFondo{
+      color: #090909;
+      position: absolute;
+      z-index: 3;
+      font-family: sans-serif;
+      letter-spacing: 4px;
+      font-size: 1rem;
+      display: none;
+
+    }
+    .fondoBlanco{
+      position: absolute;
+      z-index: 1;
+
+      background: white;
+      border-radius: 50px;
+      opacity: 0.4;
+      display: none;
+    }
     /* CURSOR CIRCULO */
       .cursor {
       z-index: 999; 
       position: fixed;
       background: #2696E8;
-      width: 20px;
-      height: 20px;
+
       border-radius: 50%;
       pointer-events: none;
       box-shadow: 0 0 20px #2696E8, 0 0 60px #2696E8, 0 0 100px #2696E8;
@@ -410,7 +484,7 @@
 
     .textoCircle{
       position: absolute;
-      width: 5rem;
+      width: 7rem;
       top: 3.1rem;
       left: .6rem;
       color: white;
@@ -456,12 +530,15 @@
       animation: girarRapido 5s 1;
     }
     .home{
-      left: 70rem;
+      left: 65rem;
     }
     .aboutMe{
-      left: 75rem;
+      left: 70rem;
     }
     .projects{
+      left: 75rem;
+    }
+    .arch{
       left: 80rem;
     }
     .skills{
@@ -1300,6 +1377,7 @@ margin-bottom: 1rem;
       .aboutMe,
       .projects,
       .skills,
+      .arch,
       .certificates{
         transition: 1s;
         left: 1.5rem;
@@ -1313,11 +1391,14 @@ margin-bottom: 1rem;
       .projects{
         top: 20rem;
       }
-      .skills{
+      .arch{
         top: 25rem;
       }
-      .certificates{
+      .skills{
         top: 30rem;
+      }
+      .certificates{
+        top: 35rem;
       }
       /* HOME END */
       /* PROJECTS */
