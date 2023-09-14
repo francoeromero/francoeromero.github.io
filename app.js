@@ -365,3 +365,20 @@ phone.addEventListener('click', function(e){
   window.open('http://wa.link/d80sr2');
 });
 
+// Seleccionar los elementos
+let textosFondo = document.querySelectorAll('.textoFondo');
+let fondosBlancos = document.querySelectorAll('.fondoBlanco');
+let imgs = document.querySelectorAll('.img');
+
+// Agregar event listeners a cada imagen
+imgs.forEach((img, index) => {
+  img.addEventListener('mouseenter', () => {
+    fondosBlancos[index].style.display = 'block';
+    textosFondo[index].style.display = 'block';
+  });
+
+  img.addEventListener('mouseleave', () => {
+    fondosBlancos[index].style.display = 'none';
+    textosFondo[index].style.display = 'none';
+  });
+});
