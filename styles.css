@@ -1264,40 +1264,43 @@ margin-bottom: 1rem;
 }
 /* ///////////////////////// */
 /* CERTIFICADOS */
-
-.content-titulo-certificates{
+#certificates{
   width: 100%;
-  height: 500px;
-  position: absolute;
-  flex-direction: column;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  height: 110vh;
+  border: 2px solid transparent;
   align-items: center;
-  top: 9.2rem;
+  justify-items: center;
 }
-.tituloCertificates{
-  padding-right: 30rem;
-  padding-left: 30rem;
-  z-index: 8;
-  margin-top: -10rem;
-  font-family: 'Zen Tokyo Zoo', cursive;
-  font-size: 3rem;
-  font-style: italic;
+
+.section-certificates h1{
+  color: white;
+  width: 100%;
+
+  text-align: center;
   color: rgb(173, 173, 173);
-}
-
-.tituloCertificates:hover{
   font-family: 'Zen Tokyo Zoo', cursive;
-  color: #0b0b0b;
-  transition: 1s;
-  text-shadow: 
-    -1px -1px 0 white,
-    1px -1px 0 white,
-    1px 1px 0 white,
-    -1px 1px 0 white;
+  font-size: 5rem;
+  font-style: italic;
 }
-
+.uba{
+  width: 29rem;
+  height: 22rem;
+  background: url(./img/certificates/UBA.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  border: 12px solid rgb(15, 34, 74);
+}
+.carrusel{
+  margin-bottom: -10rem;
+}
 .carrusel-items{
+  margin-bottom: 10rem;
+  margin-top: -3rem;
   padding-top: 15rem;
   position: absolute;
   /* right: 0rem; */
@@ -1306,6 +1309,9 @@ margin-bottom: 1rem;
   overflow-x: hidden;
   overflow-y: hidden;
   animation: carrusel 100s infinite linear;
+}
+.subtitle1{
+  margin-top: 7rem;
 }
 @keyframes carrusel{
   0%, 100%{
@@ -1316,27 +1322,24 @@ margin-bottom: 1rem;
   }
 }
 
-.linea-carrusel1{
-  height: .2rem;
-  width: 100%;
-  margin-top: -18rem;
-}
-.linea-carrusel2{
-  height: .2rem;
-  width: 100%;
-  margin-bottom: -4rem;
-
+.carrusel{
+  margin-bottom: 25rem;
 }
 .carrusel-item{
   min-width: 400px;
   max-width: 300px;
   height: 300px;
+  margin-top: -5rem;
+  margin-bottom: -1rem;
+  scale: .8;
+
 }
 .carrusel-item img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 /* ////////////////////////// */
     /* RESPONSIVO */
     @media (max-width: 1500px){
