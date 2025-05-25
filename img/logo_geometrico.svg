@@ -1,0 +1,13 @@
+<svg id="svg" xmlns="http://www.w3.org/2000/svg" width="645" height="1080" viewBox="0 0 645 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 5px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Forma_1" data-name="Forma 1" class="cls-1" d="M21,1045l278,1V279L200,383l-2,572H21v90Zm322-1h96l-1-830,5-3,114,96,70-23L357,34H345Z"/>
+</svg>

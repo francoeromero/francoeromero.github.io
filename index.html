@@ -1,574 +1,584 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Franco E. Romero</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="icon" href="./img/arch/01_posproduccion.jpg">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Turret+Road:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./styles.css">
+<title>Franco Ezequiel Romero</title>
+<meta name="viewport" content="width = 1050, user-scalable = no" />
+
+<!-- font -->
+<link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<!-- font -->
+<!-- turnjs -->
+<script type="text/javascript" src="./extras/jquery.min.js"></script>
+<script type="text/javascript" src="./lib/hash.js"></script>
+<script type="text/javascript" src="./lib/turn.min.js"></script>
+<script type="text/javascript" src="./lib/zoom.min.js"></script>
+<script type="text/javascript" src="js/magazine.js"></script>
+<!-- turnjs -->
+<!-- icon bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<!-- icon bootstrap -->
+<link rel="icon" href="./img/icon_pestaña_nav.png">
+<link rel="stylesheet" href="./css/magazine.css">
+
 </head>
+
 <body>
-  <div class="cursor"></div>
-  <div class="content-logoAnimado">
-    <!-- <div class="logoAnimado"></div> -->
-    <img class="fondoAnimado" src="./img/background.png"alt="">
-    <img class="cascoAnimado" src="./img/casco.png" alt="">
-    <img class="engranajeAnimado" src="./img/engranaje.png" alt="">
-  </div>
-    <div class="content-transicion">
-    <div class="transicion"></div>
-  </div>
-  <ul class="menu">
-    <li class="content-logo">
-      <img class="logo" id="casco" src="./img/casco.png" alt="">
-      <img class="logo" id="engranaje" src="./img/engranaje.png" alt="">
-    </li>
-        <li>
-          <div class="home circle">
-            <i class="bi bi-house-door"></i>
-            <h3 class="textoCircle">home</h3>
-          </div>
-        </li>
-        <li>
-          <div class="aboutMe circle">
-            <i class="bi bi-person-vcard"></i>
-            <h3 class="textoCircle">about me</h3>
-          </div>
-        </li>
-        <li>
-          <div class="projects circle">
-            <i class="bi bi-folder"></i>
-            <h3 class="textoCircle">projects</h3>
-          </div>
-        </li>
-        <li>
-          <div class="arch circle">
-            <i class="bi bi-box-seam"></i>
-            <h3 class="textoCircle">design 3D</h3>
-          </div>
-        </li>
-        <li>
-          <div class="skills circle">
-            <i class="bi bi-gear"></i>
-            <h3 class="textoCircle">skills</h3>
-          </div>
-        </li>
-        <li>
-          <div class="certificates circle">
-            <i class="bi bi-mortarboard"></i>
-            <h3 class="textoCircle">education</h3>
-          </div>
-        </li>
-      </ul>
 
 
-      <!-- ////////// -->
-      <!-- HOME -->
-      <section class="section-home" id="home">
-      <main id="textos" class="textos">
-          <h2 class="texto1">FRANCO EZEQUIEL ROMERO</h2>
-          <h2 class="texto2">FRANCO EZEQUIEL ROMERO</h2>
-          <h2 class="texto3">FRANCO EZEQUIEL ROMERO</h2>
-          <h3 class="texto4"><i>Architect Frontend developer</i></h3>
-          <p class="texto5">I will turn your ideas into projects</p>
-          <div class="parpadeo"></div>
-          <button class="boton">
-            <a href="./cv/cv_español.pdf" download class="cv">Download CV</a>
-          </button>
-      </main>
-      <div class="content-ciudad">
-        <img class="ciudad" src="./img/aaa.png" alt="">
-      </div>
-
-    </section>
-
-    <section class="section-about" id="about">
-      <div class="content-tituloAbout">
-        <h1 class="tituloAbout">ABOUT ME</h1>
-      </div>
-      <div class="content-description">
-        <div class="forma3"></div>
-        <div class="forma2"></div>
-        <div class="forma"></div>
-        <img class="foto" src="./img/000000000.jpg" alt="">
-        <p class="textoAbout">Technology oriented Architect with more than 3 years of experience in various projects focused on the planning and projection of functional, structural and efficient problem-solving designs.</p>
-      </div>
-      <div class="content-contacto">
-            <img class="contacto linkedin" src="./img/linkedin.png" alt="">
-
-          <img class="contacto github" src="./img/github.png" alt="">
-          <img class="contacto email" src="./img/email.png" alt="">
-          <img class="contacto phone" src="./img/phone.png" alt="">
-      </div>
-      <div class="content-formas-contacto">
-        <div class="forma-contacto linkedin"></div>
-        <div class="forma-contacto github"></div>
-        <div class="forma-contacto email"></div>
-        <div class="forma-contacto phone"></div>
-      </div>
-      <!-- <div class="content-formas-contacto-segundo">
-        <div class="forma-contacto-segundo linkedin"></div>
-        <div class="forma-contacto-segundo github"></div>
-        <div class="forma-contacto-segundo email"></div>
-        <div class="forma-contacto-segundo phone"></div>
-      </div> -->
-
-    </section>
-
-    <section class="section-projects" id="projects">
-        <h1 class="tituloProjects">PROJECTS</h1>
-        <p class="parrafoProjects">Some of my projects</p>
-      <ul class="content-projects">
-        <!-- ecomerce ropa -->
-        <li class="forma-projects">
-          <div class="elemento1">
-            <p>Ecommerce Tienda de ropa</p>
-          </div>
-
-          <a href="https://github.com/francoeromero/clothing_store" target="_blank">
-            <div class="elemento2">
-              <i class="bi bi-github"></i>
-            </div>
-          </a>
-
-          <a href="https://francoeromero.github.io/clothing_store/" target="_blank">
-          <div class="elemento3">
-              <i class="bi bi-link-45deg"></i>
-          </div>
-          </a>
-
-            <div class="elemento4">
-              <img class="tech" src="https://skillicons.dev/icons?i=js" alt="JS" > 
-              <img class="tech" src="https://skillicons.dev/icons?i=bootstrap" alt="bootstrap"> 
-              <img class="tech" src="https://skillicons.dev/icons?i=sass" alt="SASS" > 
-              <img class="tech" src="https://skillicons.dev/icons?i=html" alt="HTML" > 
-              <img class="tech" src="https://skillicons.dev/icons?i=css" alt="CSS" > 
-            </div>
-            <div class="elemento5">
-              <img class="p1" src="./img/projects_icon/ecommerce1.png" alt="">
-            </div>
-        </li>
-        <!-- add emails -->
-        <li class="forma-projects">
-          <div class="elemento1">
-            <p>Add emails</p>
-          </div>
-
-          <a href="https://github.com/francoeromero/add_emails" target="_blank">
-            <div class="elemento2">
-              <i class="bi bi-github"></i>
-            </div>
-          </a>
 
 
-          <a href="https://francoeromero.github.io/add_emails/" target="_blank">
-          <div class="elemento3">
-            <i class="bi bi-link-45deg"></i>
-          </div>
-          </a>
-          <div class="elemento4">
-            <img class="tech" src="https://skillicons.dev/icons?i=js" alt="JS" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=bootstrap" alt="bootstrap"> 
-            <img class="tech" src="https://skillicons.dev/icons?i=sass" alt="SASS" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=html" alt="HTML" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=css" alt="CSS" > 
-          </div>
-          <div class="elemento5">
-            <img class="p1" src="./img/projects_icon/add_emails.png" alt="">
-          </div>
-        </li>
+
+
+
+
+<div id="canvas" class="canvas">
+
+
+<div class="zoom-icon zoom-icon-in"></div>
+
+<div class="magazine-viewport">
+		<!-- contacto -->
+		<div class="contacto" >
+			<a class="wp" href="https://wa.me/5491151214792" style="display: flex;" target="_blank">
+				<p>Contáctanos por Whatsapp 
+					<!-- <i class="bi bi-whatsapp"></i> -->
+				</p> 
+				<img  src="./img/whatsap.png">
+			</a>
+			<a class="tel" href="tel:+5491151214792" target="_blank">
+				<p>Puedes llamar y con gusto atenderemos</p>
+				<img  src="./img/llamada.png" >
+			</a>
+			<a  class="cv" href="./download/xx.pdf" download="catálogo" target="_blank"> 
+				<!-- ./download/# -->
+				<p>Puedes descargar el catálogo</p>
+				<img src="./img/cv.png">
+			</a>
+		</div>
+
+
+
+	<img id='flechas' class="flechas" src="./img/flechitas_teclado.png" >
+	<!-- botones para pasar pagina -->		
+	<div class="container">
+		<div class="magazine">
+			<!-- Next button -->
+			<div ignore="1" class="next-button"></div>
+			<!-- Previous button -->
+			<div ignore="1" class="previous-button"></div>
+		</div>
+	</div>
+</div>
+
+
+
+	<!-- responsive flechas -->
+	<div class="flechas_responsive">
+		<img class="next-button-responsive" src="./img/flecha_derecha_responsive.png" alt="">
+		
+		<img class="previous-button-responsive" src="./img/flecha_izquierda_responsive.png" alt="">
+	</div>
+
+	<!-- copyright -->
+	<div style="display: flex; flex-direction: column;">
+		
+		<p id="copy" style=" z-index: 9; position: absolute; bottom: 0; color: white; left: 50%; transform: translateX(-50%);font-family:sans-serif; font-size: 1rem; text-shadow: 1px 2px  black; "> Copyright © 2024 - Franco Ezequiel Romero</p>
+	</div>
+</div>
+
+
+<div class="loading-page" >
+
+	
+	  <svg class="logoEmpresa"xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+		<defs>
+			<style>
+			.logoEmpresa {
+				fill: none;
+				stroke: #ffffff;
+				stroke-width: 8px;
+				fill-rule: evenodd;
+			}
+			</style>
+		</defs>
+		<path id="Rectángulo_1" data-name="Rectángulo 1" class="cls-1" d="M83,67H347v1c-5.835,4.663-8.78,12.656-13,19-4.478,6.732-10.538,13.342-15,20-2.642,3.943-5.842,14-10,16H83V67ZM196,347V289h67c18.178,0,36.881,1.078,50-4,16.973-6.57,29.517-21.477,39-36,7.8-11.94,16.885-35.368,11-57-3.646-13.4-11.876-23.726-15-35,6.963-5.127,10.966-14.854,16-22,2.415-3.428,6.581-6.574,9-10,3.7-5.236,5.728-13.463,13-15,3.807,7.356,10.7,13.042,15,20,7.305,11.81,13.53,27.253,18,41,14.532,44.69-5.835,94.713-24,120-9.559,13.307-24.941,26.2-39,35-6.963,4.358-21.081,4.664-22,15,10.788,7.8,18.265,24.016,26,35,13.043,18.523,27.56,36.282,41,55,6.068,8.451,16.478,16.514,20,27h-1c-4.024,2.519-15.065,1-21,1H344L263,347H196ZM83,178H228c13.549,0,51.469-2.939,61,1,8.567,3.541,11.924,12,18,18,0.118,12.922-.466,22.829-6,30-7.968,10.326-27.594,9-46,9H141V456c-15.691-.132-45.115-3.307-58,1V178Z"/>
+		</svg>
+
+
+	  
+<svg id="svg" class="svg" xmlns="http://www.w3.org/2000/svg" width="1624" height="123" viewBox="0 0 1624 123">
+  <defs>
+    <style>
+      .svg {
+        fill: none;
+        stroke: #ffffff;
         
-        <!-- area calculator -->
-        <li class="forma-projects">
-          <div class="elemento1">
-            <p>Area Calculator</p>
-          </div>
-
-          <a href="https://github.com/francoeromero/area_calculator" target="_blank">
-            <div class="elemento2">
-              <i class="bi bi-github"></i>
-            </div>
-          </a>
-
-          <a href="https://francoeromero.github.io/area_calculator/" target="_blank">
-            <div class="elemento3">
-              <i class="bi bi-link-45deg"></i>
-            </div>
-          </a>
-
-          <div class="elemento4">
-            <img class="tech" src="https://skillicons.dev/icons?i=js" alt="JS" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=bootstrap" alt="bootstrap"> 
-            <img class="tech" src="https://skillicons.dev/icons?i=sass" alt="SASS" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=html" alt="HTML" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=css" alt="CSS" > 
-          </div>
-          <div class="elemento5">
-            <img class="p1" src="./img/projects_icon/area_calculator.png" alt="">
-          </div>
-        </li>
-
-        <!-- drum machine -->
-        <li class="forma-projects">
-          <div class="elemento1">
-            <p>Drum machine</p>
-          </div>
-
-          <a href="https://github.com/francoeromero/drum_machine" target="_blank">
-            <div class="elemento2">
-              <i class="bi bi-github"></i>
-            </div>
-          </a>
-
-          <a href="https://francoeromero.github.io/drum_machine/" target="_blank">
-            <div class="elemento3">
-              <i class="bi bi-link-45deg"></i>
-            </div>
-          </a>
-
-          <div class="elemento4">
-            <img class="tech" src="https://skillicons.dev/icons?i=js" alt="JS" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=bootstrap" alt="bootstrap"> 
-            <img class="tech" src="https://skillicons.dev/icons?i=sass" alt="SASS" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=html" alt="HTML" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=css" alt="CSS" > 
-          </div>
-          <div class="elemento5">
-            <img class="p1" src="./img/projects_icon/drom_machine.png" alt="">
-          </div>
-        </li>
-        <!-- quotes random -->
-        <li class="forma-projects">
-          <div class="elemento1">
-            <p>Quotes Random</p>
-          </div>
-
-          <a href="https://github.com/francoeromero/quotes-random" target="_blank">
-            <div class="elemento2">
-              <i class="bi bi-github"></i>
-            </div>
-          </a>
-          
-          <a href="https://francoeromero.github.io/quotes-random/" target="_blank">
-          <div class="elemento3">
-            <i class="bi bi-link-45deg"></i>
-          </div>
-          </a>
-          
-          <div class="elemento4">
-            <img class="tech" src="https://skillicons.dev/icons?i=js" alt="JS" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=bootstrap" alt="bootstrap"> 
-            <img class="tech" src="https://skillicons.dev/icons?i=sass" alt="SASS" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=html" alt="HTML" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=css" alt="CSS" > 
-          </div>
-          <div class="elemento5">
-            <img class="p1" src="./img/projects_icon/random_quote.png" alt="">
-          </div>
-        </li>
-        <!-- task list -->
-        <li class="forma-projects">
-          <div class="elemento1">
-            <p>Task list</p>
-          </div>
-
-          <a href="https://github.com/francoeromero/" target="_blank">
-            <div class="elemento2">
-              <i class="bi bi-github"></i>
-            </div>
-          </a>
-
-          <a href="https://francoeromero.github.io/task_list/" target="_blank">
-            <div class="elemento3">
-              <i class="bi bi-link-45deg"></i>
-            </div>
-          </a>
-
-          <div class="elemento4">
-            <img class="tech" src="https://skillicons.dev/icons?i=js" alt="JS" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=bootstrap" alt="bootstrap"> 
-            <img class="tech" src="https://skillicons.dev/icons?i=sass" alt="SASS" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=html" alt="HTML" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=css" alt="CSS" > 
-          </div>
-          <div class="elemento5">
-            <img class="p1" src="./img/projects_icon/task_list.png" alt="">
-          </div>
-        </li>
-
-        <!-- colors random -->
-        <li class="forma-projects">
-          <div class="elemento1">
-            <p>Colors random</p>
-          </div>
-
-          <a href="https://github.com/francoeromero/colors_random" target="_blank">
-            <div class="elemento2">
-              <i class="bi bi-github"></i>
-            </div>
-          </a>
-
-          <a href="https://francoeromero.github.io/colors_random/" target="_blank">
-            <div class="elemento3">
-              <i class="bi bi-link-45deg"></i>
-            </div>
-          </a>
-          <div class="elemento4">
-            <img class="tech" src="https://skillicons.dev/icons?i=js" alt="JS" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=bootstrap" alt="bootstrap"> 
-            <img class="tech" src="https://skillicons.dev/icons?i=sass" alt="SASS" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=html" alt="HTML" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=css" alt="CSS" > 
-          </div>
-          <div class="elemento5">
-            <img class="p1" src="./img/projects_icon/colors_random.png" alt="">
-          </div>
-        </li>
-
-        <!-- colors rgb -->
-        <li class="forma-projects">
-          <div class="elemento1">
-            <p>Colors RGB</p>
-          </div>
-
-          <a href="https://github.com/francoeromero/" target="_blank">
-          <div class="elemento2">
-            <i class="bi bi-github"></i>
-          </div>
-          </a>
-
-          <a href="https://francoeromero.github.io/rgb_colors/" target="_blank">
-          <div class="elemento3">
-            <i class="bi bi-link-45deg"></i>
-          </div>
-          </a>
-          <div class="elemento4">
-            <img class="tech" src="https://skillicons.dev/icons?i=js" alt="JS" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=bootstrap" alt="bootstrap"> 
-            <img class="tech" src="https://skillicons.dev/icons?i=sass" alt="SASS" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=html" alt="HTML" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=css" alt="CSS" > 
-          </div>
-          <div class="elemento5">
-            <img class="p1" src="./img/projects_icon/colors_rgb.png" alt="">
-          </div>
-        </li>
-
-        <!-- time -->
-        <li class="forma-projects">
-          <div class="elemento1">
-            <p>Time chronometer</p>
-          </div>
-
-          <a href="https://github.com/francoeromero/time_chronometer" target="_blank">
-            <div class="elemento2">
-              <i class="bi bi-github"></i>
-            </div>
-          </a>
-
-          <a href="https://francoeromero.github.io/time_chronometer/" target="_blank">
-            <div class="elemento3">
-              <i class="bi bi-link-45deg"></i>
-            </div>
-          </a>
-
-          <div class="elemento4">
-            <img class="tech" src="https://skillicons.dev/icons?i=js" alt="JS" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=bootstrap" alt="bootstrap"> 
-            <img class="tech" src="https://skillicons.dev/icons?i=sass" alt="SASS" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=html" alt="HTML" > 
-            <img class="tech" src="https://skillicons.dev/icons?i=css" alt="CSS" > 
-          </div>
-          <div class="elemento5">
-            <img class="p1" src="./img/projects_icon/time_chronometer.png" alt="">
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <section class="section-arch" id="arch">
-      <div class="flex">
-        <h1 class="tituloProjects">DESIGNS </h1>
-        <div class="grid">
-          <div class="img img1 tamaño">
-            <h2 class="textoFondo">Casa Montero</h2>
-            <div class="fondoBlanco tamaño"></div>
-          </div>
-          <div class="img img2 tamaño">
-            <h2 class="textoFondo">Aulas sensoriales</h2>
-            <div class="fondoBlanco tamaño"></div>
-          </div>
-          <div class="img img3 tamaño">
-            <h2 class="textoFondo">Casa H</h2>
-            <div class="fondoBlanco tamaño"></div>
-          </div>
-          <div class="img img4 tamaño">
-            <h2 class="textoFondo">Iglesia El Encuentro</h2>
-            <div class="fondoBlanco tamaño"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-skills" id="skills">
-      <h1 class="tituloSkills">MY SKILLS</h1>
-      <ul class="grid-skills">
-        <li class="skl">
-          <p class="textIcono">Python</p>
-          <img class="icono-skills" src="./img/skills_py.png" alt="">
-        </li>
-        <li class="skl">
-          <p class="textIcono">JavaScript</p>
-          <img class="icono-skills" src="./img/skills_js.png" alt="">
-        </li>
-        <li class="skl">
-          <p class="textIcono">React</p>
-          <img class="icono-skills" src="./img/skills_react.png" alt="">
-        </li>
-        <li class="skl">
-          <p class="textIcono">SQL</p>
-          <img class="icono-skills" src="./img/skills_sql.png" alt="">
-        </li>
-        <li class="skl">
-          <p class="textIcono">Bootstrap</p>
-          <img class="icono-skills" src="./img/skills_bootstrap.png" alt="">
-        </li>
-        <li class="skl">
-          <p class="textIcono">Sass</p>
-          <img class="icono-skills" src="./img/skills_sass.png" alt="">
-        </li>
-        <li class="skl">
-          <p class="textIcono">Git</p>
-          <img class="icono-skills" src="./img/skills_git.png" alt="">
-        </li>
-        <li class="skl">
-          <p class="textIcono">Node JS</p>
-          <img class="icono-skills" src="./img/skills_nodejs.png" alt="">
-        </li>
-      </ul>
-      <div class="prueba">
-        <p class="titleDesignSkills">DESIGN SKILLS</p>
-        <ul class="grid-design-skills">
-          <li class="skl">
-            <p class="textIcono">Premier</p>
-            <img class="icono-skills" src="./img/skills_pr.png" alt="">
-          </li>
-          <li class="skl">
-            <p class="textIcono">After effects</p>
-            <img class="icono-skills" src="./img/skills_ae.png" alt="">
-          </li>
-          <li class="skl">
-            <p class="textIcono">Photoshop</p>
-            <img class="icono-skills" src="./img/skills_psd.png" alt="">
-          </li>
-          <li class="skl">
-            <p class="textIcono">AutoCAD</p>
-            <img class="icono-skills" src="./img/skills_cad.png" alt="">
-          </li>
-          <li class="skl">
-            <p class="textIcono">Revit</p>
-            <img class="icono-skills" src="./img/skills_revit.png" alt="">
-          </li>
-          <li class="skl">
-            <p class="textIcono">Sketchup</p>
-            <img class="icono-skills" src="./img/skills_sketchup.png" alt="">
-          </li>
-          <li class="skl">
-            <p class="textIcono">Blender</p>
-            <img class="icono-skills" src="./img/skills_blender.png" alt="">
-          </li>
-          <li class="skl">
-            <p class="textIcono">3ds Max</p>
-            <img class="icono-skills" src="./img/skills_3dmax.png" alt="">
-          </li>
-
-        </ul>
-      </div>
-
-    </section>
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Rectángulo_2" data-name="Rectángulo 2" class="cls-1" d="M36,50c11.365-.106,25.281-0.916,35,1,0.631,1.754.193,0.971,1,2-0.631,1.754-.193.971-1,2-2.538,5.672-24.9,3.262-33,3-1.021.8-.274,0.355-2,1v43a21.507,21.507,0,0,1-7,1c-2.325-7.023-1-19.234-1-28V17c10.641-3.56,29.364-1.084,42-1a10.949,10.949,0,0,0,2,3c-0.631,1.754-.193.971-1,2-2.573,5.738-25.789,3.259-34,3C34.829,30.42,35.92,41.86,36,50ZM160,69H140c0.106,11.057.859,24.58-1,34h-6c-3.064-5.96-2-17.966-2-27V18c7.242-3.781,23.422-2.122,34-2,2.213,1.951,5.5,2.216,8,4,9.168,6.542,15.491,25.447,7,38-3.052,4.512-9.41,4.883-11,11,4.668,4.921,15,26.247,14,33a18.324,18.324,0,0,1-6,1C171.485,93.176,162.313,80.653,160,69ZM263,16h5c9.3,17.762,12.737,39.379,20,59,3.141,8.485,8.688,17.905,7,28h-6c-2.484-5.933-3.975-16.128-8-21-5.586-3.577-23.09-1.134-31-1-2.894,7.421-3.371,21.886-14,22v-2c-2.807-4.566,3.066-17.813,5-23C248.386,58.191,253.735,34.769,263,16Zm85,0h6c11.574,20.9,24.425,41.323,35,63h2V18c0.8-1.021.355-.274,1-2h6l1,3c2.638,4.176,1,15.868,1,22,0,19.464,2.506,43.38-1,61a18.324,18.324,0,0,1-6,1c-12.317-20.8-24.873-42.327-36-64h-1v62c-2.542,1.372-3.5,1.917-8,2v-2c-2.748-4.351-1-16.653-1-23C347,58.222,344.437,33.927,348,16Zm127,0h27v2c0.8,1.18.773,1.681,1,4-5.649,2.969-17.288,2.123-26,2-1.359,1.262-1.768,1.365-4,2l-5,7c-0.135,10.116-2.792,47.014,1,53,3.329,11.032,17.571,9.442,32,9,1.225,2.281,1.638,2.251,2,6-0.8,1.021-.355.274-1,2H475c-4.194-3.716-9.967-5.133-13-10-3.926-6.3-5.627-53.465-2-63C462.946,22.255,469.42,20.973,475,16Zm110,0c16.65-.557,29.8,4.753,31,19,3.456,4.938,2,17.013,2,25,0,28.3-4.083,43.7-33,43-8.05-6.066-16.7-8.23-20-19-2.538-8.284-.583-49.093,2-54,3.09-5.869,9.5-8.524,14-13C583.328,16.8,583.826,16.807,585,16Zm201,0h42v2c4.466,8.813-25.37,6.437-34,6v1h-1c1.689,5.237-.718,21.106,1,24,4.724,2.954,19.492.992,25,2a15.705,15.705,0,0,1,1,5c-0.8,1.021-.355.274-1,2H795c-0.69,1.481-2.374,33.618-1,36,5.937,3.795,24.661,1.134,33,1l1,3c1.207,2.111.483,2.232,0,5H786v-2c-2.748-4.351-1-16.653-1-23C785,58.222,782.437,33.927,786,16Zm219,53c0.11,11.057.86,24.58-1,34h-6q-0.5-1.5-1-3c-2.638-4.176-1-15.868-1-22,0-19.464-2.506-43.38,1-61,8.26-2.777,22.9-1.082,33-1,3.73,3.294,9.57,4.43,13,8,5.77,6,8.78,24.313,3,33-3.18,4.78-10.36,5.665-12,12,4.43,4.743,14.24,24.355,15,32-2.42,1.3-2.83,1.8-7,2-1.42-3.113-16.28-33.5-17-34h-20Zm119-53c17.37-.429,27.61,5.025,32,17,2.1,5.721,1,14.783,1,22,0,24.975-.39,42.176-19,48-5.71,1.788-13.94-.77-17-2-17.02-6.834-17-21.039-17-45q0.495-11.5,1-23C1108.34,23.4,1116.57,21.567,1124,16Zm85,0h6c3.66,11.173,16.71,24.464,23,35h1V50c8.75-7.206,16.21-33.587,29-34v2c2.75,4.351,1,16.653,1,23,0,19.778,2.56,44.073-1,62h-6c-0.33-1-.67-2-1-3-2.1-3.292-1-11.948-1-17,0-14.782-1.63-32.955,1-46h-2c-3.6,6.006-14.74,24.936-21,27-1.07-.752-0.95-0.6-3-1-3.1-10.069-12.23-17.785-17-27h-1v64c-0.8,1.021-.35.274-1,2a21.474,21.474,0,0,1-7,1v-2c-2.75-4.351-1-16.653-1-23C1208,58.222,1205.44,33.927,1209,16Zm124,8V50h24a17.881,17.881,0,0,0,3,4c-0.33,1-.67,2-1,3-5.9,2-16.42,1.079-24,1-1.02.8-.27,0.355-2,1V95h33c1.3,2.418,1.8,2.833,2,7-10.64,3.56-29.36,1.084-42,1-0.33-1-.67-2-1-3-2.64-4.176-1-15.868-1-22,0-19.464-2.51-43.38,1-61,10.64-3.56,29.36-1.084,42-1a18.3,18.3,0,0,1,1,6C1360.56,25.884,1343.81,24.122,1333,24Zm104,45c0.11,10.749.8,23.879-1,33a21.474,21.474,0,0,1-7,1v-2c-2.75-4.351-1-16.653-1-23,0-19.778-2.56-44.073,1-62h33c2.3,2.08,5.27,2.139,8,4,9.6,6.547,14.63,25.345,7,38-2.4,3.979-8.61,4.959-11,9-3.62,6.455,27.14,35.077,7,36-0.99-3.625-15.32-33.131-17-34h-19Zm119-53c16.48-.409,26.11,4.322,31,15,2.98,6.508,2,16.839,2,26,0,29.732-2.68,46.749-33,46-8.13-6.126-16.66-8.106-20-19-2.08-6.784.15-50.457,2-54,3.15-6.018,9.43-8.447,14-13C1554.33,16.8,1554.83,16.807,1556,16ZM140,24V60a219.54,219.54,0,0,0,26-1c13.689-17.209,12.093-20.976-3-35H140Zm446,0c-3.492,3.214-8.784,4.531-11,9-4.009,8.085-1.2,43.512,0,53,6.832,4.918,8.13,9.08,21,9,4.336-3.786,9.78-5.058,12-11,5.29-14.158,1.309-51.563-7-57C597.524,24.122,592.636,23.867,586,24Zm419,0V60a219.557,219.557,0,0,0,26-1,120.34,120.34,0,0,1,9-11,56.991,56.991,0,0,0-2-16C1025.97,23.539,1026.08,23.767,1005,24Zm121,0c-1.07.752-.95,0.6-3,1-3.54,3.577-8.35,6.611-10,12V82c1.44,4.46,5.46,9.441,10,11,2.81,2.242,7.71,2.136,13,2,3.82-3.54,8.09-4.36,10-10,3.61-4.615,3.07-47.916,0-53-2.26-3.75-6.89-5.093-10-8h-10Zm311,0V60c17.4,0.6,33.37,1.182,34-15,2.04-3.126.2-7.331-1-10C1464.76,23.367,1454.39,23.252,1437,24Zm120,0c-3.5,3.223-8.76,4.534-11,9-6.07,12.1-1.68,40.4,0,53,6.56,5.153,8.31,9.093,21,9,4.34-3.786,9.78-5.058,12-11,5.29-14.158,1.31-51.563-7-57C1568.52,24.122,1563.64,23.867,1557,24ZM278,73c-1.331-12.223-7.43-26.218-12-37h-2c-0.7,9.458-12.29,30.437-10,36C258.36,74.818,271.587,73.133,278,73ZM840,93h8v10h-8V93Z"/>
+</svg>
 
 
-    <section class="section-certificates" id="certificates">
-      <!-- <h1 class="subtitle1 ">title</h1> -->
-      <!-- <div class="uba"></div> -->
-      <!-- <h1 class="subtitle2 ">certificates</h1> -->
-      <div class="carrusel">
-        <div class="carrusel-items">
-          <div class="carrusel-item">
-            <img src="./img/certificates/fcc_frontend.png" alt="">
-          </div>
-          <div class="carrusel-item">
-            <img src="./img/certificates/fcc_js.png" alt="">
-          </div>
-          <div class="carrusel-item">
-            <img src="./img/certificates/fcc_web.png" alt="">
-          </div>
-          <div class="carrusel-item">
-            <img src="./img/certificates/fcc_curso.png" alt="">
-          </div>
-          <div class="carrusel-item">
-            <img src="./img/certificates/fcc_ecomerce.png" alt="">
-          </div>
-          <div class="carrusel-item">
-            <img src="./img/certificates/fcc_openbtc.png" alt="">
-          </div>
-          <div class="carrusel-item">
-            <img src="./img/certificates/fcc_openbtc_react.png" alt="">
-          </div>
 
-          <div class="carrusel-item">
-            <img src="./img/certificates/fcc_frontend.png" alt="">
-          </div>
-          <div class="carrusel-item">
-            <img src="./img/certificates/fcc_js.png" alt="">
-          </div>
-          <div class="carrusel-item">
-            <img src="./img/certificates/fcc_web.png" alt="">
-          </div>
-          <div class="carrusel-item">
-            <img src="./img/certificates/fcc_curso.png" alt="">
-          </div>
-          <div class="carrusel-item">
-            <img src="./img/certificates/fcc_ecomerce.png" alt="">
-          </div>
-          <div class="carrusel-item">
-            <img src="./img/certificates/fcc_openbtc.png" alt="">
-          </div>
 
-          <div class="carrusel-item">
-            <img src="./img/certificates/fcc_frontend.png" alt="">
-          </div>
-          <div class="carrusel-item">
-            <img src="./img/certificates/fcc_js.png" alt="">
-          </div>
-          <div class="carrusel-item">
-            <img src="./img/certificates/fcc_web.png" alt="">
-          </div>
-          <div class="carrusel-item">
-            <img src="./img/certificates/fcc_curso.png" alt="">
-          </div>
-          <div class="carrusel-item">
-            <img src="./img/certificates/fcc_ecomerce.png" alt="">
-          </div>
-          <div class="carrusel-item">
-            <img src="./img/certificates/fcc_openbtc.png" alt="">
-          </div>
-        </div>
-      </div>
-      <div class="uba"></div>
-    </section>
+	  
+	  
+	  
+	  
+	<div class="name-container">
+		<img class="logo-name" src="./img/luxterra.png" style="width: 400px !important;">
+		
+	</div>
+</div> 
 
-    <div class="footer">
-      <p class="copyright">© 2023 Franco Ezequiel Romero</p>
-    </div>
-    <div id="particles-js"></div>
-    <script src="./particles.min.js"></script>
-    <script src="./particlesjs.js"></script>
-    <script src="./app.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+</script>
+<script>
+gsap.fromTo(
+	".loading-page",
+	{ opacity: 1 },
+	{
+	  opacity: 0,
+	  display: "none",
+	  duration: 2,
+	  delay: 3,
+	}
+  );
+  
+  gsap.fromTo(
+	".logo-name",
+	{
+	  y: 50,
+	  opacity: 0,
+	},
+	{
+	  y: 0,
+	  opacity: 1,
+	  duration: 2,
+	  delay: 0.5,
+	}
+  );
+  
+  gsap.fromTo(
+	".logo-parrafo",
+	{
+	  y: 50,
+	  opacity: 0,
+	},
+	{
+	  y: 0,
+	  opacity: 1,
+	  duration: 2,
+	  delay: 0.5,
+	}
+  );
+  
+</script>
+
+<script type="text/javascript">
+flechas = document.getElementById('flechas')
+function loadApp() {
+
+ 	$('#canvas').fadeIn(1000);
+
+ 	var flipbook = $('.magazine');
+
+ 	// Check if the CSS was already loaded
+	
+	if (flipbook.width()==0 || flipbook.height()==0) {
+		setTimeout(loadApp, 10);
+		return;
+	}
+	
+	// Create the flipbook
+
+	flipbook.turn({
+			
+			// Magazine width
+
+			width: 1050,
+
+			// Magazine height
+
+			height: 800,
+
+			// Duration in millisecond
+
+			duration: 1000,
+
+			// Hardware acceleration
+
+			acceleration: true,
+
+			// Enables gradients
+
+			gradients: true,
+			
+			// Auto center this flipbook
+
+			autoCenter: true,
+
+			// Elevation from the edge of the flipbook when turning a page
+
+			elevation: 50,
+
+			// The number of pages
+
+			pages: 46,
+
+			// Events
+
+			when: {
+				turning: function(event, page, view) {
+					
+					var book = $(this),
+					currentPage = book.turn('page'),
+					pages = book.turn('pages');
+			
+					// Update the current URI
+
+					Hash.go('page/' + page).update();
+
+					// Show and hide navigation buttons
+
+					disableControls(page);
+					
+
+					$('.thumbnails .page-'+currentPage).
+						parent().
+						removeClass('current');
+
+					$('.thumbnails .page-'+page).
+						parent().
+						addClass('current');
+
+
+
+				},
+
+				turned: function(event, page, view) {
+
+					disableControls(page);
+
+					$(this).turn('center');
+
+					if (page==1) { 
+						$(this).turn('peel', 'br');
+					}
+
+				},
+
+				missing: function (event, pages) {
+
+					// Add pages that aren't in the magazine
+
+					for (var i = 0; i < pages.length; i++)
+						addPage(pages[i], $(this));
+
+				}
+			}
+
+	});
+
+	// Zoom.js
+
+	$('.magazine-viewport').zoom({
+		flipbook: $('.magazine'),
+
+		max: function() { 
+			flechas.style.display = 'none';
+			return largeMagazineWidth()/$('.magazine').width();
+
+		}, 
+
+		when: {
+
+			swipeLeft: function() {
+
+				$(this).zoom('flipbook').turn('next');
+
+			},
+
+			swipeRight: function() {
+				
+				$(this).zoom('flipbook').turn('previous');
+
+			},
+
+			resize: function(event, scale, page, pageElement) {
+
+				if (scale==1)
+					loadSmallPage(page, pageElement);
+				else
+					loadLargePage(page, pageElement);
+
+			},
+
+			// zoomIn: function () {
+
+			// 	$('.thumbnails').hide();
+			// 	$('.made').hide();
+			// 	$('.magazine').removeClass('animated').addClass('zoom-in');
+			// 	$('.zoom-icon').removeClass('zoom-icon-in').addClass('zoom-icon-out');
+				
+			// 	if (!window.escTip && !$.isTouch) {
+			// 		escTip = true;
+
+			// 		$('<div />', {'class': 'exit-message'}).
+			// 			html('<div>Press ESC to exit</div>').
+			// 				appendTo($('body')).
+			// 				delay(2000).
+			// 				animate({opacity:0}, 500, function() {
+			// 					$(this).remove();
+			// 				});
+			// 	}
+			// },
+
+			// zoomOut: function () {
+			// 	flechas.style.display = 'block';
+			// 	$('.exit-message').hide();
+			// 	$('.thumbnails').fadeIn();
+			// 	$('.made').fadeIn();
+			// 	$('.zoom-icon').removeClass('zoom-icon-out').addClass('zoom-icon-in');
+
+			// 	setTimeout(function(){
+			// 		$('.magazine').addClass('animated').removeClass('zoom-in');
+			// 		resizeViewport();
+			// 	}, 0);
+
+			// }
+		}
+	});
+
+	// Zoom event
+////////////////////////////////////////////////////////////////////////////// ZOOM DESACTIVADO
+	// if ($.isTouch)
+	// 	$('.magazine-viewport').on('zoom.doubleTap', zoomTo);
+	// else
+	// 	$('.magazine-viewport').on('zoom.tap', zoomTo);
+////////////////////////////////////////////////////////////////////////////// ZOOM DESACTIVADO
+
+	// Using arrow keys to turn the page
+
+	$(document).on('keydown',function(e){
+
+		var previous = 37, next = 39, esc = 27;
+
+		switch (e.keyCode) {
+			case previous:
+
+				// left arrow
+				$('.magazine').turn('previous');
+				e.preventDefault();
+
+			break;
+			case next:
+
+				//right arrow
+				$('.magazine').turn('next');
+				e.preventDefault();
+
+			break;
+			case esc:
+				
+				$('.magazine-viewport').zoom('zoomOut');	
+				e.preventDefault();
+
+			break;
+		}
+	});
+
+	// URIs - Format #/page/1 
+
+	Hash.on('^page\/([0-9]*)$', {
+		yep: function(path, parts) {
+			var page = parts[1];
+
+			if (page!==undefined) {
+				if ($('.magazine').turn('is'))
+					$('.magazine').turn('page', page);
+			}
+
+		},
+		nop: function(path) {
+
+			if ($('.magazine').turn('is'))
+				$('.magazine').turn('page', 1);
+		}
+	});
+
+
+	$(window).on('resize',function() {
+		resizeViewport();
+	}).on('orientationchange', function() {
+		resizeViewport();
+	});
+
+	// Events for thumbnails
+
+	$('.thumbnails').on('click', function(event) {
+		
+		var page;
+
+		if (event.target && (page=/page-([0-9]+)/.exec($(event.target).attr('class'))) ) {
+		
+			$('.magazine').turn('page', page[1]);
+		}
+	});
+
+	$('.thumbnails li').
+		on($.mouseEvents.over, function() {
+			
+			$(this).addClass('thumb-hover');
+
+		}).on($.mouseEvents.out, function() {
+			
+			$(this).removeClass('thumb-hover');
+
+		});
+
+	if ($.isTouch) {
+		console.log('tactil')
+		// $('.thumbnails').
+		// 	addClass('thumbanils-touch').
+		// 	on($.mouseEvents.move, function(event) {
+		// 		event.preventDefault();
+		// 	});
+
+	} else {
+
+		$('.thumbnails ul').on('mouseover', function() {
+
+			$('.thumbnails').addClass('thumbnails-hover');
+
+		}).on('mousedown',function() {
+
+			return false;
+
+		}).on('mouseout',function() {
+
+			$('.thumbnails').removeClass('thumbnails-hover');
+
+		});
+
+	}
+
+
+	// Regions
+
+	if ($.isTouch) {
+		$('.magazine').on('touchstart', regionClick);
+	} else {
+		$('.magazine').on('click', regionClick);
+	}
+
+	// Events for the next button
+
+	$('.next-button').on($.mouseEvents.over, function() {
+		
+		$(this).addClass('next-button-hover');
+
+	}).on($.mouseEvents.out, function() {
+		
+		$(this).removeClass('next-button-hover');
+
+	}).on($.mouseEvents.down, function() {
+		
+		$(this).addClass('next-button-down');
+
+	}).on($.mouseEvents.up, function() {
+		
+		$(this).removeClass('next-button-down');
+
+	}).on('click', function() {
+		
+		$('.magazine').turn('next');
+
+	});
+
+	// Events for the next button
+	
+	$('.previous-button').on($.mouseEvents.over, function() {
+		
+		$(this).addClass('previous-button-hover');
+
+	}).on($.mouseEvents.out, function() {
+		
+		$(this).removeClass('previous-button-hover');
+
+	}).on($.mouseEvents.down, function() {
+		
+		$(this).addClass('previous-button-down');
+
+	}).on($.mouseEvents.up, function() {
+		
+		$(this).removeClass('previous-button-down');
+
+	}).on('click', function() {
+		
+		$('.magazine').turn('previous');
+
+	});
+
+
+	resizeViewport();
+
+	$('.magazine').addClass('animated');
+
+}
+
+// Zoom icon
+////////////////////////////////////////////////////////////////////// ICONO DESACTIVADO
+//  $('.zoom-icon').on('mouseover', function() { 
+ 	
+//  	if ($(this).hasClass('zoom-icon-in'))
+//  		$(this).addClass('zoom-icon-in-hover');
+
+//  	if ($(this).hasClass('zoom-icon-out'))
+//  		$(this).addClass('zoom-icon-out-hover');
+ 
+//  }).on('mouseout', function() { 
+ 	
+//  	 if ($(this).hasClass('zoom-icon-in'))
+//  		$(this).removeClass('zoom-icon-in-hover');
+ 	
+//  	if ($(this).hasClass('zoom-icon-out'))
+//  		$(this).removeClass('zoom-icon-out-hover');
+
+//  }).on('click', function() {
+
+//  	if ($(this).hasClass('zoom-icon-in'))
+//  		$('.magazine-viewport').zoom('zoomIn');
+//  	else if ($(this).hasClass('zoom-icon-out'))	
+// 		$('.magazine-viewport').zoom('zoomOut');
+
+//  });
+
+//  $('#canvas').hide();
+////////////////////////////////////////////////////////////////////// ICONO DESACTIVADO
+
+
+// Load turn.js
+
+loadApp()
+
+</script>
+
 </body>
 </html>
