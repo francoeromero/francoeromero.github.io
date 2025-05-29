@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CV</title>  
+  <link rel="icon" href="./img/icon_pestaña_nav.png">
+  <style>
+    :root{
+        --color-primario:#7c3c30;
+        --color-secundario:#ffb453;
+        /* --color-primario:#e45a31;
+        --color-secundario:#e4e129; */
+        /* --color-primario:#75acff;
+        --color-secundario:#8c6ff3; */
+        /* --color-primario:#832bac;
+        --color-secundario:#3b91d8; */
+        /* --color-primario:#00f260;
+        --color-secundario:#0575e6; */
+        --fondo-hoja:rgb(35, 38, 47);
+        --fondo-header-1:rgb(35, 38, 47);
+        --fondo-header-2:rgb(67,70,75);
+        --tamaño-foto: 12rem;
+        --tamaño-qr: 10rem;
+        --tamaño-nombre-apellido:1.7rem;
+    }
+@media print {
+  @page {
+    size: A4;
+    margin: 0 !important;
+
+  }
+}
+    body {
+      margin: 0;
+      padding: 0;
+      background: url(./video/fondo_estatico.jpg); /* Para visualizar los márgenes en pantalla */
+    }
+
+    .a4 {
+        width: 210mm;
+        height: 297mm;
+        background: var(--fondo-hoja);
+        margin: auto;
+        padding: 10mm;
+        box-sizing: border-box;
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+        box-shadow: none;
+        page-break-after: always;
+        
+    }
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        width: 111%;
+        height: 17%;
+        background: var(--fondo-header-1);
+        margin-top: -2rem;
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        transform: translateX(-5%); 
+        color: white;
+        z-index: 5;
+    }
+    .header_2 {
+        width: 111%;
+        height: 13%;
+        background: var(--fondo-header-2);
+        margin-top: -2rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transform: translate(-5%,20%); 
+        
+        z-index: 0 !important;
+    }
+
+
+    .img_cv_wrapper {
+    position: relative;
+    width: var(--tamaño-foto);
+    height: var(--tamaño-foto);
+    margin-left: 5%;
+    }
+
+    .img_cv_wrapper::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+    border-radius: 50%;
+    z-index: 2;
+    }
+
+    .img_cv {
+    width: var(--tamaño-foto);
+    height: var(--tamaño-foto);
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 3;
+    background: white; 
+    }
+    .qr_wrapper {
+    position: relative;
+    width: var(--tamaño-qr);
+    height: var(--tamaño-qr);
+    }
+
+    .qr_wrapper::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    background: linear-gradient(135deg, var(--color-primario), var(--color-secundario)); 
+    z-index: 2;
+    transform: translateX(-2%);
+}
+
+.qr {
+    width: var(--tamaño-qr);
+    height: var(--tamaño-qr);
+    transform: translateX(-2%);
+    object-fit: cover;
+    position: relative;
+    z-index: 3;
+    background: white; 
+    }
+    .descripcion{
+        text-align: right;
+        font-family: sans-serif;
+        z-index: 1;
+        padding-right: 1rem;
+    }
+    .descripcion h3 {
+        margin-bottom: 0.1rem;
+    }
+    
+    .textoDegrade {
+        font-size: 0.8rem;
+        font-weight: bold;
+        background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+        margin-top: -2rem;
+        margin-bottom: -4rem !important;
+    }
+
+    .contentTitulo{
+    margin-top: 1rem;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 17rem;
+    border-right: 3px solid rgb(255, 255, 255);
+    
+    }
+    .contentNombreApellido{
+        margin-bottom: -2rem;
+        margin-top: -2rem;
+    }
+    .nombre{
+        display: inline-block;
+        z-index: 9999 !important;
+        font-family: sans-serif;
+        font-size: var(--tamaño-nombre-apellido);
+        z-index: 69;
+        font-weight: 100;
+    }
+    .apellido{
+        display: inline-block;
+        font-weight: bold;
+        font-size: var(--tamaño-nombre-apellido);
+        font-family: sans-serif;
+        z-index: 69;
+    }
+    .profesion{
+        font-family: sans-serif;
+        font-size: 15px;
+    }
+    .web_a{
+        text-decoration: none;
+    }
+    .web{
+        /* color: white; */
+        font-family: sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: -.5rem;
+        background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-decoration: none !important;
+        text-shadow: -5px 3px 2px rgba(0, 0, 0, 0.2);
+        
+    }
+    .web::before{
+        content:"";
+        position: absolute;
+        
+        background: rgb(46, 46, 46);
+        width: 14rem;
+        transform: translate(-3%,-8%);
+        height: 1.5rem;
+        z-index: -1;
+        border-radius: 10px;
+
+    }
+
+.contentEnlaces {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transform: translateX(-10%);
+  
+}
+
+.enlacesPrimeraFila,
+.contentSegundaFila {
+  display: flex;
+  flex-wrap: wrap; /* por si se reduce el ancho */
+  align-items: center;
+  gap: .5rem;
+}
+
+.enlacesPrimeraFila a,
+.contentSegundaFila a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.enlacesPrimeraFila p,
+.contentSegundaFila p {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  background: white;
+  padding: .6rem;
+  border-radius: 15px;
+  color: black;
+  box-shadow: -5px 5px 10px rgba(24, 24, 24, 0.4);
+}
+
+.iconoWrapper {
+  position: relative;
+  width: 52px;  /* tamaño base del wrapper */
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconoWrapper::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+  z-index: 0;
+  box-shadow: -5px 5px 10px rgba(24, 24, 24, 0.4);
+}
+
+.iconoWrapper img {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+}
+
+.contentAcademia{
+    width:35%;
+    height: 75%;
+    background: var(--fondo-header-2);
+    z-index: 9;
+    transform: translate(-8%,5%);
+    border-radius: 1rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    
+
+}
+.contentTrabajo{
+    width:69%;
+    height: 75%;
+    background: white;
+    z-index: 9;
+    transform: translate(50%,-95%);
+    border-radius: 1rem;
+}
+.subtituloAcademia{
+    font-family: sans-serif;
+    font-size: 1rem;
+    margin-bottom: -.2rem;
+    margin-left: .5rem;
+    color: white;
+    text-shadow: -10px 8px 18px black;
+}
+.contentTech{
+    text-align: center;
+}
+.tech{
+    display: inline-block;
+    font-family: sans-serif;
+    background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+    color: white;
+    border-radius: 10px;
+    margin-bottom: -2rem;
+    margin-top: 0.5rem;
+    padding: 4px;
+    text-shadow: -2px 2px 2px rgba(0, 0, 0, 0.7);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+
+
+
+
+
+.listaEducation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listaEducation li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.listaExperiencia {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listaExperiencia li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.infoLateral {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  text-align: right;
+  width: 3rem;
+}
+
+.infoLateral::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(3500%,-50%);
+  width: .1rem;
+  height: 5rem;
+  /* border-radius: 50%; */
+  background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+}
+.infoLateral_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  text-align: right;
+  width: 3rem;
+}
+
+.infoLateral_2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(3500%,-50%);
+  width: .1rem;
+  height: 3rem;
+  /* border-radius: 50%; */
+  background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+}
+.infoLateral_3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  text-align: right;
+  width: 3rem;
+}
+
+.infoLateral_3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(3500%,-50%);
+  width: .1rem;
+  height: 8rem;
+  /* border-radius: 50%; */
+  background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+}
+
+.etiqueta {
+  font-weight: bold;
+  font-size: 0.75rem;
+  margin: 0;
+  color: #cacaca;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.subetiqueta {
+    /* color: linear-gradient(135deg, var(--color-primario), #cacaca); */
+    color: #cacaca;
+    font-size: 0.75rem;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+    
+}
+.etiqueta_2 {
+  /* font-weight: bold; */
+  font-size: 0.70rem;
+  margin: 0;
+  color: #272727;
+  font-family: sans-serif;
+}
+
+.subetiqueta_2 {
+    
+    background: linear-gradient(135deg, var(--color-primario));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 0.70rem;
+    margin: 0;
+    font-family: sans-serif;
+    
+    
+}
+
+.descripcionEducacion {
+  margin: 0;
+  color: white;
+  font-size: .8rem;
+  font-family: sans-serif;
+  width: 11rem;
+  
+}
+.descripcionExperiencia {
+  margin: 0;
+  color: rgb(29, 29, 29);
+  font-size: .8rem;
+  font-family: sans-serif;
+  width: 26rem;
+
+}
+
+.contentEtiqExp{
+    display: inline-block;
+    text-align: center;
+}
+.contentItemEducation{
+    margin-bottom: -0.7rem !important;
+}
+.contentItemCurso{
+    margin-bottom: 0.2rem !important;
+    
+}
+.contentItemExp{
+    margin-bottom: 0.2rem !important;
+     margin-top: -0.5rem;
+}
+
+
+.eduTitulo{
+    font-size: .9rem;
+    font-weight: bold;
+    margin-bottom: -.7rem;
+}
+.eduSubtitulo{
+    font-size: .8rem;
+    margin-bottom: -.7rem;
+    
+}
+.eduDescripcion{
+    font-style: italic;
+    font-size: .6rem;
+    margin-top: 1rem;
+
+}
+
+/* idiomas */
+
+.listaIdiomas {
+  list-style: none;
+  padding: 0;
+  /* margin: 0; */
+  margin-top: .8rem;
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.listaIdiomas li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: -0.2rem;
+  font-family: sans-serif;
+  color: white;
+}
+
+.listaIdiomas li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+  background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1rem;
+  margin-top: -.2rem;
+}
+
+.tituloExperiencia{
+    position: relative;
+    font-family: sans-serif;
+    background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+    width: 15rem;
+    padding: 8px;
+    text-align: center;
+    border-radius: 22px;
+    font-size: 1.2rem;
+    color: white;
+    border: 5px solid white;
+    z-index: 9 !important;    
+    text-shadow: -4px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* .tituloExperiencia::before{
+    content:'';
+    position: absolute;
+    width: 10rem;
+    height: 1rem;
+    z-index: 1 !important;
+    transform: translateX(110%);
+    background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+} */
+
+.raya{
+        position: absolute;
+    width: 15rem;
+    height: .5rem;
+    z-index: 1 !important;
+    transform: translate(100%,230%);
+    background: linear-gradient(135deg, var(--color-secundario), var(--color-primario));
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+    /* Estilos de impresión */
+    @media print {
+      body {
+        background: none;
+      }
+      .a4 {
+        box-shadow: none;
+        margin: 0;
+      }
+    }
+
+
+
+    .contentExperiencia{
+        background: white;
+        width: 31rem; 
+        height: 49rem; 
+        border-radius: 10px;
+        margin-left: 15.5rem;
+        margin-top: -47.5rem;
+        z-index: -1;
+    }
+
+    .etiquetaTechExp{
+        display: inline-block;
+        background: linear-gradient(135deg, rgb(196, 196, 196), rgb(211, 211, 211));
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.1);
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 0.7rem;
+        font-weight: bold;
+        margin-bottom: -1.2rem;
+    }
+    .expTitulo{
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: -.8rem;
+    }
+    .expSubtitulo{
+        font-size: 1rem;
+        font-weight: bold;
+        color: #3b3b3b;
+        margin-bottom: 0rem;
+    }
+    .expActividades{
+        font-size: .8rem;
+        margin-left: -1rem;
+    }
+    .expActividades li{
+        margin-bottom: 0rem;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root{
+	--primario : #be8e63;
+	--secundario : #6d4c2f;
+}
+/* iconos de contacto */
+.contacto{
+    position: fixed !important;
+	width: 4.5rem;
+	border-bottom-left-radius: 1rem;
+	border-top-left-radius: 1rem;
+	/* background-color: #d7d7d7; */
+	background-image: linear-gradient(147deg, var(--primario) 0%, var(--secundario) 75%);
+	z-index: 9;
+	position: absolute;
+	right: 0;
+	height: 18rem;
+	top: 50%;
+	transform: translateY(-50%);
+	user-select: none; 
+}
+.wp, .tel, .cv {
+	position: fixed;
+	z-index: 9;
+	/* width: 20rem; */
+	right: 0;
+	bottom: 0;
+	margin-right: 1rem;
+	cursor: pointer;
+	text-decoration: none;
+	display: flex;
+	font-family: "Roboto", sans-serif;
+	/* centrar */
+	/* top: 50%; 
+	transform: translateY(-50%); */
+  }
+  
+  .cv {
+	margin-bottom: 13rem;
+	animation: bounce 6s infinite ease-in-out;
+  }
+  
+  .tel {
+	margin-bottom: 7rem;
+	animation: bounce 6s infinite ease-in-out;
+  }
+  
+  .wp {
+	margin-bottom: 1rem;
+	animation: bounce 6s infinite ease-in-out;
+  }
+  .wp img, .tel img, .cv img{
+	height: 50px;
+	width: 40px;
+	margin-top: 4rem;
+	transform: rotate(0deg);
+  }
+  .wp img, .tel img, .cv img{
+	height: 45px;
+	width: 40px;
+	margin-top: 4rem;
+	transform: rotate(0deg);
+  }
+  .wp p, .tel p, .cv p {
+	/* display: none; */
+	/* height: 1.5rem; */
+	/* border-image: linear-gradient(315deg, #9e6026 0%, #d67b04 74%); */
+
+	border-image-slice: 1;
+	border-width: 1px;
+	border-style: solid;
+
+	/* font-family: 'Poiret One', sans-serif !important; */
+	font-family: "Roboto", sans-serif !important;
+	/* font-weight: bold; */
+	height: 2rem;
+	padding: 1rem;
+	font-size: 0.9rem;
+	width: 8.2rem;
+	border-radius: 10px;
+	/* border-bottom-right-radius: none;  */
+	/* border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: none; */
+	background-color: none;
+	background-image: linear-gradient(315deg, var(--primario) 20%, var(--secundario) 74%);
+	color: white;
+	box-shadow: 10px 10px 10px black;
+	font-family: sans-serif;
+	margin-right: .5rem;
+	transition: opacity 1s;
+	opacity: 0; /* Inicialmente oculto */
+  }
+  
+  .wp:hover p, .tel:hover p, .cv:hover p {
+	display: block;
+	animation: aparece 4s;
+	color: rgb(255, 255, 255);
+  }
+  .wp:hover img, .tel:hover img, .cv:hover img {
+	animation: girar .7s;
+  }
+  @keyframes girar{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(720deg);}
+  }
+@keyframes aparece{
+	0%{opacity: 0;}
+	50%{opacity: 1;}
+	100%{opacity: 1;}
+} 
+
+  
+  @keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+	  transform: translateY(0);
+	}
+	40% {
+	  transform: translateY(-1rem);
+	}
+	60% {
+	  transform: translateY(-0.5rem);
+	}
+  }
+    .img_cv_responsive{
+        display: none;
+    }
+
+  @media(max-width:1500px){
+    .contacto{
+        display: none;
+    }
+    .a4{
+        margin-top: 25rem;
+    }
+    .img_cv_responsive{
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        max-width: 8rem;
+        margin-bottom: 10rem;
+        margin-top: 5rem;
+        animation: bounce 6s infinite ease-in-out;
+         padding: 5px; border-radius: 8px;
+        box-shadow: -10px 10px 10px black;
+        background: var(--color-primario);
+        border-radius: 10px;
+        
+    }
+  }
+  
+  </style>
+</head>
+<body>
+
+
+		<div class="contacto" >
+			<a class="wp" href="https://wa.me/5491151214792?text=Hola%2C+quiero+consultarte+por+tu+servicio
+" style="display: flex;" target="_blank">
+				<p>Contáctame por Whatsapp 
+			
+				</p> 
+            
+				<img  src="./img/whatsap.png">
+			</a>
+			<a class="tel" href="tel:+5491151214792" target="_blank" >
+				<p>Puedes llamar y con gusto atenderé</p>
+				<img  src="./img/llamada.png" >
+			</a>
+			<a  class="cv" href="./extras/cv franco romero (3).pdf" download="cv franco romero (3).pdf" > 
+		
+				<p>Descargar Curriculum Vitae</p>
+				<img style="background: var(--color-primario); padding: 5px; border-radius: 8px; width: 2.5rem; height: 2.5rem;" src="./img_cv/descargar_cv.png">
+			</a>
+		</div>
+  <div class="a4">
+    
+    <header class="header" id="header">
+        <div class="img_cv_wrapper">
+            <img class="img_cv" src="./img_cv/0.jpg" alt="Foto de perfil">
+        </div>
+
+        <div class="descripcion">
+            <h3>PERFIL PROFESIONAL</h3>
+            <p>Profesional independiente, especializado en la visualización arquitectónica, diseño y tecnología, busco desarrollar constantemente mis habilidades y crecer profesionalmente.</p>
+            <p class="textoDegrade">PORTAFOLIO →</p>
+        </div>
+        <div class="qr_wrapper">
+            <a href="https://francoeromero.github.io/" target="_blank">
+                <img class="qr" src="./img_cv/qr.png">
+            </a>
+        </div>
+    </header>
+
+    <header class="header_2">
+        <div class="contentTitulo"> 
+            <div class="contentNombreApellido">
+                <p class="nombre">FRANCO</p> <b class="apellido">ROMERO</b>
+            </div>
+            <p class="profesion">ARQUITECTO Y PROGRAMADOR</p>
+            <a class="web_a" href="https://francoeromero.github.io/" target="_blank">
+                <p class="web">wwww.francoeromero.com</p>
+            </a>
+        </div>
+
+        <div class="contentEnlaces">
+            <!-- primera fila -->
+             <div class="enlacesPrimeraFila">
+                 <a href="mailto:franromeroeze@gmail.com"  class="iconoWrapper" target="_blank">
+                     <img src="./img_cv/circle_email.png" width="50" alt="">
+                 </a>
+                 
+                     <p class="email">franromeroeze@gmail.com</p>
+               
+     
+                 <a href="https://www.google.com/maps/place/Buenos+Aires,+CABA/@-34.5876268,-58.5166096,11.75z/data=!4m6!3m5!1s0x95bcca3b4ef90cbd:0xa0b3812e88e88e87!8m2!3d-34.6036844!4d-58.3815591!16zL20vMDFseTVt?entry=ttu"  class="iconoWrapper" target="_blank">
+                     <img src="./img_cv/circle_location.png" width="50" alt="">
+                 </a>
+                 
+                     <p class="localidad">CABA, Argentina</p>
+                 
+             </div>
+            <!-- segunda fila -->
+             <div class="contentSegundaFila">
+                 <a href="http://wa.link/d80sr2"  class="iconoWrapper" target="_blank">
+                     <img src="./img_cv/circle_phone.png" width="50" alt="">
+                 </a>
+     
+                 
+                     <p class="numero">+54 11 5121-4792</p>
+                 
+     
+                 <a href="https://francoeromero.github.io/"  class="iconoWrapper" target="_blank">
+                     <img src="./img_cv/circle_website.png" width="50" alt="">
+                 </a>
+                 <a href="https://www.fiverr.com/franromeroe"  class="iconoWrapper" target="_blank">
+                     <img src="./img_cv/circle_fivver.png" width="50" alt="">
+                 </a>
+                 <a href="https://www.behance.net/gallery/196295391/Aulas-sensoriales-para-ninos"  class="iconoWrapper" target="_blank">
+                     <img src="./img_cv/circle_behhance.png" width="50" alt="">
+                 </a>
+                 <a href="https://github.com/francoeromero"  class="iconoWrapper" target="_blank">
+                     <img src="./img_cv/circle_github.png" width="50" alt="">
+                 </a>
+             </div>
+            
+        </div>
+    </header>
+
+
+    <div class="contentAcademia">
+        <div class="contentHabilidades">
+            <h2 class="subtituloAcademia">HABILIDADES</h2>
+            <div class="contentTech">
+                <p class="tech">AutoCAD</p>
+                <p class="tech">Revit</p>
+                <p class="tech">Photoshop</p>
+                <p class="tech">Ilustrator</p>
+                <p class="tech">After Effects</p>
+                <p class="tech">Premier</p>
+                <p class="tech">3ds Max</p>
+                <p class="tech">Blender</p>
+                <p class="tech">Twinmotion</p>
+                <p class="tech">Lumion</p>
+                <p class="tech">Vray</p>
+                <p class="tech">Excel</p>
+                <p class="tech">Google sheets</p>
+                <p class="tech">Desarrollo Web</p>
+                <p class="tech">HTML5</p>
+                <p class="tech">CSS3</p>
+                <p class="tech">JavaScript</p>
+                <p class="tech">Python</p>
+                <p class="tech">NodeJS</p>
+                <p class="tech">SASS</p>
+                <p class="tech">Jquery</p>
+                <p class="tech">Git</p>
+                <p class="tech">GitHub</p>
+                <p class="tech">Inteligencia Artificial</p>
+                <p class="tech">Bootstrap</p>
+                <p class="tech">Figma</p>
+                <p class="tech">Vue JS</p>
+                <p class="tech">React JS</p>
+                <p class="tech">Next JS</p>
+                <p class="tech">PHP</p>
+                <p class="tech">SQL</p>
+                <p class="tech">Mysql</p>
+                <p class="tech">Canva</p>
+                <p class="tech">Wordpress</p>
+            </div>
+        </div>
+        <div>
+            <h2 class="subtituloAcademia">EDUCACIÓN</h2>
+
+<ul class="listaEducation">
+  <li class="contentItemEducation" >
+    <div class="infoLateral">
+      <p class="etiqueta">02/2023</p>
+      <p class="subetiqueta">Presente</p>
+    </div>
+    <div class="descripcionEducacion">
+        <p class="eduTitulo">Universidad Tecnológica Nacional (UTN) </p>
+        <p class="eduSubtitulo">Tecnicatura de Sistemas de Información </p>
+        <p class="eduDescripcion">Aplicar los principios de lógica de programación para resolver problemas y desarrollar algoritmos eficientes</p>
+    </div>
+  </li>
+
+
+  <li class="contentItemEducation">
+    <div class="infoLateral">
+      <p class="etiqueta">03/2013</p>
+      <p class="subetiqueta">07/2020</p>
+    </div>
+        <div class="descripcionEducacion">
+        <p class="eduTitulo">Universidad de Buenos Aires (UBA) </p>
+        <p class="eduSubtitulo">Facultad de Arquitectura, Diseño y Urbanismo </p>
+        <p class="eduDescripcion">Proyectos enfocados en la planificación y proyección de diseños funcionales, estructurales y eficientes en la resolucion de un problema</p>
+    </div>
+  </li>
+
+</ul>
+
+</div>
+
+<div>
+    <h2 class="subtituloAcademia">CURSOS</h2>
+    <ul class="listaEducation">
+        
+    <li class="contentItemCurso">
+        <div class="infoLateral_2">
+        <p class="etiqueta">03/2015</p>
+        <p class="subetiqueta">07/2016</p>
+        </div>
+            <div class="descripcionEducacion">
+            <p class="eduTitulo">Centro CAO </p>
+            <p class="eduSubtitulo">Revit,3ds Max,After Effects, Premier </p>
+
+        </div>
+    </li>
+
+    <li class="contentItemCurso" >
+        <div class="infoLateral_2">
+        <p class="etiqueta">02/2013</p>
+        <p class="subetiqueta">07/2014</p>
+        </div>
+        <div class="descripcionEducacion">
+            <p class="eduTitulo">Centro de Estudios Técnicos Administrativos Empresariales</p>
+            <p class="eduSubtitulo">AutoCAD, Excel</p>
+
+        </div>
+    </li>
+
+
+
+    </ul>
+</div>
+
+    <div>
+        <h2 class="subtituloAcademia">IDIOMAS</h2>
+        <ul class="listaIdiomas">
+            <li>Español - Nativo</li>
+            <li>Inglés - Intermedio</li>
+        </ul>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+<div class="contentExperiencia" >
+    <div class="raya"></div>
+    <h2 class="tituloExperiencia">EXPERIENCIA</h2>
+
+
+    <ul class="listaExperiencia">
+        
+    <li class="contentItemExp">
+        <div class="infoLateral_3">
+        <p class="etiqueta_2">04/2024</p>
+        <p class="subetiqueta_2">Presente</p>
+        </div>
+                    <div class="descripcionExperiencia">
+            <p class="expTitulo">RC - Ramirez & Cabral - Estudio de Arquitectura</p>
+            <p class="expSubtitulo">Proyectista y modelador 3D</p>
+            <ul class="expActividades">
+                <li>• Automatizacion de tareas técnicas para la optimizacion del trabajo.</li>
+                <li>• Soluciones integrales de diseño y construcción para espacios interiores y exteriores.</li>
+                <li>• Renderización y recorridos virtuales</li>
+            </ul>
+                 <div class="contentEtiqExp">
+                <p class="etiquetaTechExp">AutoCAD</p>
+                <p class="etiquetaTechExp">Python</p>
+                <p class="etiquetaTechExp">Inteligencia Artificial</p>
+                <p class="etiquetaTechExp">Pyautocad</p>
+                <p class="etiquetaTechExp">Photoshop</p>
+                <p class="etiquetaTechExp">Sketchup</p>
+                <p class="etiquetaTechExp">Lumion</p>
+                <p class="etiquetaTechExp">Revit</p>
+                <p class="etiquetaTechExp">Unreal Engine 5</p>
+                <p class="etiquetaTechExp">Twinmotion</p>
+            </div>
+
+        </div>
+    </li>
+
+    <li class="contentItemExp" >
+        <div class="infoLateral_3">
+        <p class="etiqueta_2">05/2022</p>
+        <p class="subetiqueta_2">Presente</p>
+        </div>
+<div class="descripcionExperiencia">
+            <p class="expTitulo">Impacto Visual 3D - Servicios Digitales</p>
+            <p class="expSubtitulo">Diseñador y Desarrollador Web</p>
+            <ul class="expActividades">
+                <li>• Desarrollo y diseño web ajustadas a las necesidad del cliente.</li>
+                <li>• Diseño Gráfico, servicios de diseño para lograr identidades potentes a la hora de mejorar ventas.</li>
+                <li>• Edición de video, creativos, diseñados especificamente para estrategias de marketing con diferentes formatos para las redes sociales.</li>
+            </ul>
+                 <div class="contentEtiqExp">
+                <p class="etiquetaTechExp">HTML5</p>
+                <p class="etiquetaTechExp">CSS5</p>
+                <p class="etiquetaTechExp">JavaScript</p>
+                <p class="etiquetaTechExp">Bootstrap</p>
+                <p class="etiquetaTechExp">SASS</p>
+                <p class="etiquetaTechExp">Jquery</p>
+                <p class="etiquetaTechExp">NodeJS</p>
+                <p class="etiquetaTechExp">Revit</p>
+                <p class="etiquetaTechExp">Premier</p>
+                <p class="etiquetaTechExp">After Effects</p>
+                <p class="etiquetaTechExp">Git</p>
+                <p class="etiquetaTechExp">GitHub</p>
+            </div>
+    </li>
+
+
+    <li class="contentItemExp" >
+        <div class="infoLateral_3">
+        <p class="etiqueta_2">03/2020</p>
+        <p class="subetiqueta_2">12/2021</p>
+        </div>
+<div class="descripcionExperiencia">
+            <p class="expTitulo">Fivver - Plataforma Freelance</p>
+            <p class="expSubtitulo">Diseñador arquitectónico y Modelador 3D</p>
+            <ul class="expActividades">
+                <li>• Servicios digitales desde visualizaciones arquitectónicas, modelado 3D, animaciones y diseño gráfico</li>
+                <li>• Adaptación a las tendencias tecnológicas: La plataforma me impulsa a mantenerme actualizado con las últimas tendencias y herramientas tecnológicas para resolver las necesidades de los clientes.  </li>
+                        
+            </ul>
+                 <div class="contentEtiqExp">
+                <p class="etiquetaTechExp">AutoCAD</p>
+                <p class="etiquetaTechExp">3Ds Max</p>
+                <p class="etiquetaTechExp">Photoshop</p>
+                <p class="etiquetaTechExp">Sketchup</p>
+                <p class="etiquetaTechExp">Lumion</p>
+                <p class="etiquetaTechExp">Revit</p>
+                <p class="etiquetaTechExp">Twinmotion</p>
+                <p class="etiquetaTechExp">UE5</p>
+            </div>
+    </li>
+
+
+    <li class="contentItemExp" >
+        <div class="infoLateral_3">
+        <p class="etiqueta_2">05/2018</p>
+        <p class="subetiqueta_2">12/2019</p>
+        </div>
+<div class="descripcionExperiencia">
+            <p class="expTitulo">Kestelman Studio - Estudio de Arquitectura</p>
+            <p class="expSubtitulo">Cadista y Renderista</p>
+            <ul class="expActividades">
+                <li>• Revisión de planos de replanteos para documentación de obra.</li>
+                <li>• Visualización arquitectónica a través de renders y recorridos virtuales</li>
+            </ul>
+                 <div class="contentEtiqExp">
+                
+                <p class="etiquetaTechExp">AutoCAD</p>
+                <p class="etiquetaTechExp">Photoshop</p>
+                <p class="etiquetaTechExp">Sketchup</p>
+                <p class="etiquetaTechExp">Lumion</p>
+                <p class="etiquetaTechExp">Twinmotion</p>
+                <p class="etiquetaTechExp">Excel</p>
+            </div>
+    </li>
+
+
+
+    </ul>
+</div>
+
+  
+
+  </div>
+    <a   href="./extras/cv franco romero (3).pdf" download="catálogo" target="_blank">
+        <img class="img_cv_responsive" src="./img_cv/descargar_cv.png">
+    </a>
+</body>
+</html>
