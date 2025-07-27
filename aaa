@@ -1,0 +1,45 @@
+<!-- CONTENEDOR CENTRAL -->
+<table style="background-color: #f5f5f5; padding: 30px 0;" border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td align="center"><!-- TARJETA -->
+<div style="color: black; padding: 30px 40px;">
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px;">
+<table style="border-radius: 12px; overflow: hidden; background-color: #ffffff;  font-family: Arial, sans-serif; color: #333; border: 1px solid #ddd;" border="0" width="600" cellspacing="0" cellpadding="0"><!-- Encabezado rojo -->
+<tbody>
+<tr>
+<td style="background-color: #b80000; color: white; text-align: center; padding: 20px;">
+<h1 style="margin: 0; font-size: 24px;">Franco Ezequiel</h1>
+<p style="margin: 0; font-size: 16px;">Arquitecto + Desarrollador</p>
+</td>
+</tr>
+<!-- SECCIÓN DETALLES EXTRA --> <!-- ¿Qué podés automatizar? -->
+<tr>
+<td style="background-color: #f8f8f8; padding: 20px; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;">
+<h3 style="text-align: center; color: #b80000;">¿Qué puedo automatizar por vos?</h3>
+<ul style="font-size: 14px; padding-left: 20px; text-align: left; margin: 10px 0;">
+<li>Planillas de cómputo y presupuesto</li>
+<li>Insertar simbología y textos en planos automáticamente</li>
+<li>Generar presentaciones web de tus proyectos</li>
+</ul>
+</td>
+</tr>
+<!-- Instrucciones / CTA -->
+<tr>
+<td style="padding: 20px; text-align: center;">
+<h3 style="color: #b80000;">¿Cómo trabajamos?</h3>
+<p style="font-size: 14px;">Te escucho, analizo el proceso que querés mejorar y te propongo una solución a medida.</p>
+<a style="display: inline-block; background-color: #b80000; color: white; padding: 12px 20px; border-radius: 6px; font-weight: bold; text-decoration: none;" href="https://tuperfil.com" target="_blank" rel="noopener">📂 Ver portafolio</a></td>
+</tr>
+<!-- Footer con contacto -->
+<tr>
+<td style="background-color: #eeeeee; text-align: center; padding: 15px; font-size: 13px;">📧 <strong>tuemail@gmail.com</strong>   |   🌐 <a style="color: #b80000;" href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener">LinkedIn</a><br>Trabajo remoto desde Argentina – para estudios y constructoras</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
